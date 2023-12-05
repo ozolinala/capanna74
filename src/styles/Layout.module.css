@@ -1,14 +1,13 @@
 .container {
     padding-left: 2%;
     padding-right: 2%;
-    margin: 0 auto;
   }
   
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;  }
+    padding: 5px 0px;  }
   
   .leftNav {
     display: flex;
