@@ -1,18 +1,43 @@
-@font-face {
-    font-family: 'Publish Gothic Regular';
-    src: url('/fonts/PublishGothicExpanded-Regular.otf') format('otf');
-    /* Add more font formats if necessary (e.g., woff2, ttf) */
+html {
+  --accent-color: #E80509;
+  --black: #1C1C1C;
+  --off-white: #F2F2F2;
+}
+/* @font-face {
+    font-family: 'Publish Gothic Extralight';
+    src: url('/fonts/PublishGothicExpanded-Light.otf') format('otf');
+  } */
+  @font-face {
+    font-family: 'Publish Gothic';
+    src: url('/fonts/PublishGothicExpanded-Extralight') format('otf');
+    src: url('/fonts/PublishGothicExpanded-Light') format('otf');
+    src: url('/fonts/PublishGothicExpanded-Regular') format('otf');
   }
-  
   body {
-    font-family: 'Publish Gothic Regular', sans-serif;
-    /* Additional global styles */
+    font-family: 'Publish Gothic', sans-serif;
+  }
+  h1{
+    font-size: 190px;
+    font-weight: lighter;
+    color: var(--black);
+  }
+  h2{
+    font-size: 48px;
+    font-weight:500;
+    color: var(--black);
+  }
+  h3{
+    font-size: 24px;
+    font-weight:500;
+    color: var(--black);
+  }
+  p{
+    font-size: 20px;
+    color: var(--black);
   }
 a {
-    font-family: 'Publish Gothic Regular', sans-serif;
-    color: black;
+    color: var(--black);
     text-decoration: none;
-    margin-right: 10px;
   }
   
   a:hover {
