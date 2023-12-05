@@ -1,9 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import LandingImage from '../components/LandingImage';
 
 const HomePage = () => {
   return (
     <Layout>
+          <LandingImage />
     <div>
       <h1>CAPANNA47</h1>
       <h2>Welcome to THE Home Page</h2>

@@ -7,16 +7,14 @@ const Layout = ({ children }) => {
     <div className={styles.container}>
       <nav className={styles.nav}>
         <div className={styles.leftNav}>
-          {/* Red text and left-aligned links */}
           <Link href="/" passHref>
-            <p className={styles.redText}>CAPANNA47</p>
+            <div className={styles.redText}>CAPANNA47</div>
           </Link>
           <Link href="/bookings" passHref>
             <p>BOOK A TABLE</p>
           </Link>
         </div>
         <div className={styles.rightNav}>
-          {/* Right-aligned links */}
           <Link href="/menu" passHref>
             <p>MENU</p>
           </Link>
