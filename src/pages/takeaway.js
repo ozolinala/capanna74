@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 const Takeaway = () => {
   return (
     <Layout>
-      <h1>Takeaway</h1>
+      <h2>Takeaway</h2>
       <p>This is the takeaway content.</p>
     </Layout>
   );

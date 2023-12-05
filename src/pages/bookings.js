@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 const Bookings = () => {
   return (
     <Layout>
-      <h1>Book a table</h1>
+      <h2>Book a table</h2>
       <p>This is the booking content.</p>
     </Layout>
   );
