@@ -1,39 +1,42 @@
+
 .nav {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: flex-end;
   align-items: center;
-  padding: 0.4rem 2rem 0 2rem;
-  /* position: fixed; */
-  width: 95%;
-  z-index: 100;
-  background-color: rgba(255, 255, 255, 0);
+  padding: 2px;
 }
 
-  .leftNav {
-    display: flex;
-    align-items: center;
-  }
+.navLinks {
+  display: flex;
+}
 
-  .redText {
-    color: var(--accent-color);
-    font-size: 22px;
-    margin-right: 20px;
-  }
+.navLink {
+  margin-right: 20px;
+}
 
-  .leftNav a:hover{
+.navLink p {
+  color: var(--black); 
+  text-decoration: none;
+  position: relative;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.dot {
+  color: var(--black); 
+}
+
+.bookTableButton p {
+  background-color: var(--accent-color);
+  color: var(--off-white); 
+  padding: 8px 13px;
+  border-radius: 25px;
   text-decoration: none;
 }
 
-.rightNav {
-  display: flex;
-  margin-left: auto;
-}
-
-.rightNav a {
-  margin-left: 30px;
-}
-
-.rightNav a:hover {
-  text-decoration: underline;
+.bookTableButton p:hover {
+opacity: 0.9;
 }
   

@@ -2,33 +2,35 @@ import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/Layout.module.css'; // Import a separate CSS module
 
-const Layout = ({ children }) => {
+const Layout = ({ currentPage, children }) => {
+  const menuItems = [
+    { id: 1, label: 'Menu', link: '/menu' },
+    { id: 2, label: 'Takeaway', link: '/takeaway' },
+    { id: 3, label: 'Our Story', link: '/our-story' },
+    { id: 4, label: 'Contact', link: '/contact' },
+  ];
+
   return (
     <div className={styles.container}>
-      <nav className={styles.nav}>
-        <div className={styles.leftNav}>
-          <Link href="/" passHref>
-            <div className={styles.redText}>CAPANNA47</div>
-          </Link>
-          <Link href="/bookings" passHref>
-            <p>BOOK A TABLE</p>
-          </Link>
-        </div>
-        <div className={styles.rightNav}>
-          <Link href="/menu" passHref>
-            <p>MENU</p>
-          </Link>
-          <Link href="/takeaway" passHref>
-            <p>TAKEAWAY</p>
-          </Link>
-          <Link href="/our-story" passHref>
-            <p>OUR STORY</p>
-          </Link>
-          <Link href="/contact" passHref>
-            <p>CONTACT</p>
-          </Link>
-        </div>
-      </nav>
+    <nav className={styles.nav}>
+      <div className={styles.navLinks}>
+        {menuItems.map((item) => (
+          <div key={item.id} className={styles.navLink}>
+            <Link href={item.link}>
+              <p className={currentPage === item.label.toLowerCase() ? styles.active : ''}>
+                {item.label}
+                {currentPage === item.label.toLowerCase() && <span className={styles.dot}> •</span>}
+              </p>
+            </Link>
+          </div>
+        ))}
+      </div>
+      <div className={styles.bookTableButton}>
+        <Link href="/bookings">
+          <p>Book a Table</p>
+        </Link>
+      </div>
+    </nav>
       <main>{children}</main>
     </div>
   );
