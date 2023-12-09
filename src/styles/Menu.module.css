@@ -16,7 +16,7 @@
 .menuItems {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 3vh;
 }
 
 .menuItems h3 {
@@ -25,4 +25,8 @@
   text-decoration-thickness: 2px;
   text-align: center;
   padding: 0;
+}
+
+.menuItems p {
+  margin: 1vh;
 }

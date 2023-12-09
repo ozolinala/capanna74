@@ -1,18 +1,13 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import LandingImage from '../components/LandingImage';
+import React from "react";
+import Layout from "../components/Layout";
+import LandingImage from "../components/LandingImage";
+import Menu from "../components/Menu";
 
 const HomePage = () => {
   return (
     <Layout>
-          <LandingImage />
-    <div>
-      <h1>CAPANNA47</h1>
-      <h2>Welcome to THE Home Page</h2>
-      <h3>hello HELLO world</h3>
-      <p>hello HELLO</p>
-      {/* Other content */}
-    </div></Layout>
+      <Menu />
+    </Layout>
   );
 };
 
