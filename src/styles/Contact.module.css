@@ -1,0 +1,27 @@
+.contactContainer {
+    display: flex;
+  }
+  
+  .imageContainer {
+    flex: 1;
+  }
+  
+  .textContainer {
+    flex: 1;
+    background-color: var(--accent-color);
+    padding: 20px;
+  }
+  
+  .infoBlock {
+    margin-bottom: 20px;
+  }
+  
+
+  .infoBlock h3 {
+    color: var(--off-white); 
+  }
+  .infoBlock p, .infoBlock a {
+    padding-left:3%;
+    color:vaR(--off-white)  } 
+
+    .infoBlock a { text-decoration: underline };
