@@ -4,6 +4,7 @@
   justify-content: flex-end;
   align-items: center;
   padding: 2px;
+  padding-right: 2%;
 }
 
 .navLinks {
@@ -16,16 +17,12 @@
 
 .navLink p {
   color: var(--black); 
+  font-weight: 300;
   text-decoration: none;
   position: relative;
 }
-
-.active {
-  font-weight: bold;
-}
-
-.dot {
-  color: var(--black); 
+.navLink p:hover {
+  text-decoration: underline;
 }
 
 .bookTableButton p {
@@ -33,10 +30,32 @@
   color: var(--off-white); 
   padding: 8px 13px;
   border-radius: 25px;
-  text-decoration: none;
+  font-weight: 300;
+  text-decoration: none !important;
 }
 
 .bookTableButton p:hover {
 opacity: 0.9;
 }
   
+
+
+.navLinkText {
+  color: var(--black);
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+}
+
+.navLinkText:hover {
+  text-decoration: underline;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.dot {
+  padding: 7px;
+  color: var(--black);
+}

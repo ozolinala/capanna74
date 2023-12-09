@@ -1,8 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
-import styles from '../styles/Layout.module.css'; // Import a separate CSS module
+import { useRouter } from 'next/router';
+import styles from '../styles/Layout.module.css'; 
 
-const Layout = ({ currentPage, children }) => {
+const Layout = ({ children }) => {
+  const router = useRouter();
+
+  // Extract the pathname from the router object
+  const currentPage = router.pathname.replace('/', ''); 
+  console.log("current page",currentPage)
+  
   const menuItems = [
     { id: 1, label: 'Menu', link: '/menu' },
     { id: 2, label: 'Takeaway', link: '/takeaway' },
@@ -17,10 +24,10 @@ const Layout = ({ currentPage, children }) => {
         {menuItems.map((item) => (
           <div key={item.id} className={styles.navLink}>
             <Link href={item.link}>
-              <p className={currentPage === item.label.toLowerCase() ? styles.active : ''}>
-                {item.label}
-                {currentPage === item.label.toLowerCase() && <span className={styles.dot}> •</span>}
-              </p>
+            <p className={`${styles.navLinkText} ${currentPage === item.label.toLowerCase() ? styles.active : ''}`}>
+                  {currentPage === item.label.toLowerCase() && <span className={styles.dot}> •</span>}
+                  {item.label}
+                </p>
             </Link>
           </div>
         ))}
