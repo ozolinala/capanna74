@@ -1,11 +1,43 @@
-import React from 'react';
-import Layout from '../components/Layout';
+import React from "react";
+import Layout from "../components/Layout";
+import styles from "../styles/Contact.module.css";
 
 const Contact = () => {
   return (
     <Layout>
-      <h2>Contact</h2>
-      <p>This is the contact page content.</p>
+      <article className={styles.container}>
+        <div className={styles.contactInfo}>
+          <div className={styles.contactInfoText}>
+            <div>
+              <h2>Opening hours</h2>
+              <p>
+                Tuesday, Wednesday, Thursday <b>17:30 - 23:00</b>
+              </p>
+              <p>
+                Friday & Saturday <b>17:00 - 00:00</b>
+              </p>
+            </div>
+            <div>
+              <h2>Contacts</h2>
+              <p>Gammel Kongevej 74, Frederiksberg</p>
+              <a href="mailto:info@capannadi74.dk">info@capanna74.dk</a>
+              <p>+45 35 00 00 90</p>
+            </div>
+            <div>
+              <h2>Other restaurants</h2>
+              <div className={styles.otherRestaurants}>
+                <a href="https://mangia.dk/">Mangia</a>
+                <a href="https://www.ristorantecircolo.dk/">Circolo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="/assets/contacts-image.jpg"
+          alt="Landing Image"
+          className={styles.contactsImage}
+        />
+      </article>
     </Layout>
   );
 };

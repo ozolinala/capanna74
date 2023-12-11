@@ -1,12 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout";
-import LandingImage from "../components/LandingImage";
-import Menu from "../components/Menu";
+import LandingGrid from "@/components/LandingGrid";
+
 
 const HomePage = () => {
   return (
     <Layout>
-      <Menu />
+
+      <LandingGrid />
     </Layout>
   );
 };
