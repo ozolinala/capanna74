@@ -3,7 +3,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 2px;
+  padding: 1px;
   padding-right: 2%;
 }
 
@@ -28,7 +28,7 @@
 .bookTableButton p {
   background-color: var(--accent-color);
   color: var(--off-white); 
-  padding: 8px 13px;
+  padding: 8px 15px;
   border-radius: 25px;
   font-weight: 300;
   text-decoration: none !important;
@@ -38,8 +38,6 @@
 opacity: 0.9;
 text-decoration: none !important;
 }
-  
-
 
 .navLinkText {
   color: var(--black);

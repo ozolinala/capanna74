@@ -11,6 +11,11 @@ html {
     src: url('/fonts/PublishGothicExpanded-Light') format('otf');
     src: url('/fonts/PublishGothicExpanded-Regular') format('otf');
   }
+  @font-face {
+    font-family: "Italian Plate X";
+    src: url("/fonts/IPNoX-Regular.otf") format("otf");
+  }
+  
   body {
     font-family: 'Publish Gothic', sans-serif;
     margin:0;
@@ -31,10 +36,14 @@ html {
   }
   h3{
     padding-left: 3%;
-    font-size: 32px;
+    font-size: 25px;
     font-weight:500;
     color: var(--black);
   }
+  h4{
+    font-size: 32px;
+    font-weight:500;
+    color: var(--accent-color); }
   p{
     font-size: 20px;
     font-weight: lighter;
@@ -46,49 +55,3 @@ a {
     font-weight: lighter;
     text-decoration: none;
   }
-
-@font-face {
-  font-family: "Publish Gothic";
-  src: url("/fonts/PublishGothicExpanded-Extralight") format("otf");
-  src: url("/fonts/PublishGothicExpanded-Light") format("otf");
-  src: url("/fonts/PublishGothicExpanded-Regular") format("otf");
-}
-
-@font-face {
-  font-family: "Italian Plate X";
-  src: url("/fonts/IPNoX-Regular.otf") format("otf");
-}
-
-body {
-  font-family: "Publish Gothic", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  padding-left: 3%;
-  margin: 0;
-  font-size: 220px;
-  font-weight: lighter;
-  color: var(--black);
-}
-h2 {
-  padding-left: 3%;
-  font-size: 48px;
-  font-weight: 500;
-  color: var(--black);
-}
-h3 {
-  padding-left: 3%;
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--black);
-}
-p {
-  font-size: 20px;
-  color: var(--black);
-}
-a {
-  color: var(--black);
-  text-decoration: none;
-}
-
