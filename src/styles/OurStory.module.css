@@ -81,4 +81,18 @@
         .item p, .item img{
             padding-bottom: 10%;
             }
+            #logo img{
+                padding-left: 20%;
+                width:60%;
+                margin-bottom: 2.4em;
+            }
+            .item h4{
+               font-size: 24px;
+            }
+            .others h2{
+                font-size: 28px;
+            }
+            .others p, .others a{
+                font-size: 20px;
+            }
   }
