@@ -8,6 +8,8 @@ const Layout = ({ children }) => {
 
   // Extract the pathname from the router object
   const currentPage = router.pathname.replace('/', ''); 
+  const currentPageNormalized = currentPage.toLowerCase().replace(/\s+/g, '-');
+
   console.log("current page",currentPage)
   
   const menuItems = [
@@ -24,10 +26,10 @@ const Layout = ({ children }) => {
         {menuItems.map((item) => (
           <div key={item.id} className={styles.navLink}>
             <Link href={item.link}>
-            <p className={`${styles.navLinkText} ${currentPage === item.label.toLowerCase() ? styles.active : ''}`}>
-                  {currentPage === item.label.toLowerCase() && <span className={styles.dot}> •</span>}
-                  {item.label}
-                </p>
+            <p className={`${styles.navLinkText} ${currentPageNormalized === item.label.toLowerCase().replace(/\s+/g, '-') ? styles.active : ''}`}>
+        {currentPageNormalized === item.label.toLowerCase().replace(/\s+/g, '-') && <span className={styles.dot}> •</span>}
+        {item.label}
+      </p>
             </Link>
           </div>
         ))}
