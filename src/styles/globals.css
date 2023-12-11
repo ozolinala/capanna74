@@ -31,10 +31,14 @@ html {
   }
   h3{
     padding-left: 3%;
-    font-size: 32px;
+    font-size: 25px;
     font-weight:500;
     color: var(--black);
   }
+  h4{
+    font-size: 32px;
+    font-weight:500;
+    color: var(--accent-color); }
   p{
     font-size: 20px;
     font-weight: lighter;

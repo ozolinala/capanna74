@@ -1,11 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import OurStoryGrid from '@/components/OurStoryGrid';
+import styles from '../styles/OurStory.module.css';
 
 const OurStory = () => {
   return (
-    <Layout>
-      <h2>Our Story</h2>
-      <p>This is the our story content.</p>
+    <Layout currentPage="yourComponent">
+<OurStoryGrid></OurStoryGrid>
     </Layout>
   );
 };
