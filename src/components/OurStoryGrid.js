@@ -11,16 +11,16 @@ const OurStoryGrid = ({ }) => {
   <br></br><br></br> The inspiration for the concept and name of the restaurant comes from a place in Italy - a hut up on a hill with all of the classic Italian dishes.
     <br></br><br></br>Our concept is born from the belief that exceptional Italian cuisine should be an everyday delight, accessible to all. Families, students, and lovers of good food – our doors are open to you.</p>
 </div>
-<div className={`${styles.item} ${styles.image}`}><img src="/assets/our-story2.png" alt="Cocktails"></img></div>
+<div className={`${styles.itemInvisible} ${styles.item} ${styles.image}`}><img src="/assets/our-story2.png" alt="Cocktails"></img></div>
 
-<div className={styles.item}></div>
+<div className={`${styles.itemInvisible} ${styles.item}`}></div>
 <div className={`${styles.item} ${styles.image}`}><img src="/assets/our-story3.png" alt="Chef in the kitchen"></img></div>
 <div className={styles.item}>
   <h4>Simple ingredients, Rich flavours</h4>
   <p>Step into our kitchen, where pasta is not merely prepared; it's a craft. Our journey begins with the finest durum wheat semolina, pure water, and a commitment to quality. The simplicity of our ingredients mirrors the authenticity of Italian pasta, creating a symphony of flavors on your plate. <br></br><br></br> From our hands to your table, it's more than pasta—it's a heartfelt connection to the heart of Italy.</p>
 </div>
 
-<div className={`${styles.item} ${styles.image}`}><img src="/assets/our-story4.png" alt="Making pasta"></img></div>
+<div className={`${styles.itemInvisible} ${styles.item} ${styles.image}`}><img src="/assets/our-story4.png" alt="Making pasta"></img></div>
 <div className={styles.item}>
   <h4>Our heart and soul</h4>
   <p>Without our awesome team, Capanna Di Settantquattro just wouldn't be the same. They're the ones who make the magic happen in the kitchen and bring our Italian pasta dream to life. 

@@ -42,7 +42,7 @@
 .others a {
     display:inline-block
 }
-.item p, .item h4 {
+.item p, .item h4{
     text-align: center;
     padding-left: 7%;
     padding-right: 7%;
@@ -57,4 +57,25 @@
     grid-template-columns: repeat(auto-fit, minmax(calc((100% - 2 * 7%) / 3), 1fr));
     }
 
+  }
+  @media (max-width: 768px) {
+    .itemInvisible{
+        display: none;
+    }
+    .item p, .item img{
+        padding-bottom: 10%;
+        }
+        .item h4{
+            margin-top: 0;
+        }
+        #logo img{
+            padding-bottom: 0;
+        }
+  }
+  @media (max-width: 480px) {
+    .item img{
+        height: 60%;
+        width: 100%;
+        object-fit: contain;
+        }
   }
