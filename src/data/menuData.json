@@ -1,0 +1,36 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "Antipasti",
+      "items": [
+        { "id": 101, "name": "Appetizer 1", "price": 5.99 },
+        { "id": 102, "name": "Appetizer 2", "price": 6.99 }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pasta",
+      "items": [
+        { "id": 201, "name": "Pasta 1", "price": 12.99 },
+        { "id": 202, "name": "Pasta 2", "price": 14.99 }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dolci",
+      "items": [
+        { "id": 301, "name": "Dolci 1", "price": 7.99 },
+        { "id": 302, "name": "Dolci 2", "price": 8.99 }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Drinks",
+      "items": [
+        { "id": 401, "name": "Drink 1", "price": 2.99 },
+        { "id": 402, "name": "Drink 2", "price": 3.99 }
+      ]
+    }
+  ]
+}
