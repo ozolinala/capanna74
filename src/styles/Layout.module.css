@@ -1,39 +1,61 @@
+
 .nav {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: flex-end;
   align-items: center;
-  padding: 0.4rem 2rem 0 2rem;
-  /* position: fixed; */
-  width: 95%;
-  z-index: 100;
-  background-color: rgba(255, 255, 255, 0);
+  padding: 2px;
+  padding-right: 2%;
 }
 
-  .leftNav {
-    display: flex;
-    align-items: center;
-  }
-
-  .redText {
-    color: var(--accent-color);
-    font-size: 22px;
-    margin-right: 20px;
-  }
-
-  .leftNav a:hover{
-  text-decoration: none;
-}
-
-.rightNav {
+.navLinks {
   display: flex;
-  margin-left: auto;
 }
 
-.rightNav a {
-  margin-left: 30px;
+.navLink {
+  margin-right: 20px;
 }
 
-.rightNav a:hover {
+.navLink p {
+  color: var(--black); 
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+}
+.navLink p:hover {
   text-decoration: underline;
 }
+
+.bookTableButton p {
+  background-color: var(--accent-color);
+  color: var(--off-white); 
+  padding: 8px 13px;
+  border-radius: 25px;
+  font-weight: 300;
+  text-decoration: none !important;
+}
+
+.bookTableButton p:hover {
+opacity: 0.9;
+}
   
+
+
+.navLinkText {
+  color: var(--black);
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+}
+
+.navLinkText:hover {
+  text-decoration: underline;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.dot {
+  padding: 7px;
+  color: var(--black);
+}
