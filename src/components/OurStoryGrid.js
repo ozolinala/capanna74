@@ -7,7 +7,9 @@ const OurStoryGrid = ({ }) => {
 <div className={`${styles.item} ${styles.image}`}><img src="/assets/our-story1.png" alt="Pasta in a pan"></img></div>
 <div id={styles.logo} className={styles.item}>
   <img src="/assets/Orange-capanna-logo.svg" alt='Logo'></img>
-  <p>Capanna Di Settantquattro is not just a restaurant; it's a journey through the authentic flavors of Italy, a culinary escape tucked away in a small house on Gammel Kongevej. <br></br><br></br>Our concept is born from the belief that exceptional Italian cuisine should be an everyday delight, accessible to all. Families, students, and lovers of good food – our doors are open to you.</p>
+  <p>Capanna Di Settantquattro is not just a restaurant; it's a journey through the authentic flavors of Italy, a culinary escape tucked away in a small house on Gammel Kongevej. 
+  <br></br><br></br> The inspiration for the concept and name of the restaurant comes from a place in Italy - a hut up on a hill with all of the classic Italian dishes.
+    <br></br><br></br>Our concept is born from the belief that exceptional Italian cuisine should be an everyday delight, accessible to all. Families, students, and lovers of good food – our doors are open to you.</p>
 </div>
 <div className={`${styles.item} ${styles.image}`}><img src="/assets/our-story2.png" alt="Cocktails"></img></div>
 
