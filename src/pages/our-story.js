@@ -16,10 +16,10 @@ const OurStory = () => {
         <a href="http://mangia.dk/" target="_blank" rel="noopener noreferrer">
           Mangia
         </a>
-        and
+        <span> and </span> 
         <a href="https://www.ristorantecircolo.dk/" target="_blank" rel="noopener noreferrer">
           Circolo
-        </a>
+        </a>.
       </p>
     </div>
     </Layout>

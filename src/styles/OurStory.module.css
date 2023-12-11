@@ -26,6 +26,7 @@
 }
 .others h2{
     color:var(--accent-color);
+    margin-bottom: 1.2%;
 }
 .others p{
     font-size: 24px;
@@ -38,8 +39,9 @@
 .others {
     padding-top: 9%;
     padding-bottom: 12%;
+    text-align: center;
 }
-.others a {
+.others p {
     display:inline-block
 }
 .item p, .item h4{
