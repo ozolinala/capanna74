@@ -50,3 +50,58 @@ a {
   /* a:hover {
     text-decoration: underline;
   } */
+=======
+  --accent-color: #e80509;
+  --black: #1c1c1c;
+  --off-white: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Publish Gothic";
+  src: url("/fonts/PublishGothicExpanded-Extralight") format("otf");
+  src: url("/fonts/PublishGothicExpanded-Light") format("otf");
+  src: url("/fonts/PublishGothicExpanded-Regular") format("otf");
+}
+
+@font-face {
+  font-family: "Italian Plate X";
+  src: url("/fonts/IPNoX-Regular.otf") format("otf");
+}
+
+body {
+  font-family: "Publish Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  padding-left: 3%;
+  margin: 0;
+  font-size: 220px;
+  font-weight: lighter;
+  color: var(--black);
+}
+h2 {
+  padding-left: 3%;
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--black);
+}
+h3 {
+  padding-left: 3%;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--black);
+}
+p {
+  font-size: 20px;
+  color: var(--black);
+}
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
