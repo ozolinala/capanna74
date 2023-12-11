@@ -1,27 +1,58 @@
-.contactContainer {
-    display: flex;
-  }
-  
-  .imageContainer {
-    flex: 1;
-  }
-  
-  .textContainer {
-    flex: 1;
-    background-color: var(--accent-color);
-    padding: 20px;
-  }
-  
-  .infoBlock {
-    margin-bottom: 20px;
-  }
-  
 
-  .infoBlock h3 {
-    color: var(--off-white); 
-  }
-  .infoBlock p, .infoBlock a {
-    padding-left:3%;
-    color:vaR(--off-white)  } 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
 
-    .infoBlock a { text-decoration: underline };
+.contactInfo {
+  background-color: var(--accent-color);
+  width: 100%;
+  height: 100%;
+}
+
+.contactInfoText {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contactInfoText h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.contactInfoText h2,
+.contactInfoText p,
+.contactInfoText a {
+  color: var(--off-white);
+}
+.contactInfoText a {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+.contactsImage {
+  width: 100%;
+  max-height: 100%;
+}
+
+.otherRestaurants {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .contactsImage {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .contactInfoText {
+    padding: 1rem;
+  }
+}
