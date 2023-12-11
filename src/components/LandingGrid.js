@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/LandingGrid.module.css";
+import Link from "next/link";
 
 const LandingGrid = () => {
   return (
@@ -19,6 +20,9 @@ const LandingGrid = () => {
         alt="Landing Image"
         className={styles.Picture3}
       />
+      <Link className={styles.button} href="/bookings">
+        Book a table
+      </Link>
     </div>
   );
 };
