@@ -21,15 +21,18 @@ const Takeaway = () => {
 
   return (
     <Layout>
-      <h2>Takeaway</h2>
-      <p>This is the takeaway content.</p>
-
-      <div>
-        <TakeawayMenu categories={menuData.categories} onSelectCategory={handleSelectCategory} />
-        <div style={{ display: "flex" }}>
+      <h2>Menu</h2>
+      <div style={{ display: "flex" }}>
+        <div>
+          <TakeawayMenu
+            categories={menuData.categories}
+            onSelectCategory={handleSelectCategory}
+            selectedCategory={selectedCategory}
+          />
           <TakeawayList items={currentCategory.items} onAddToCart={handleAddToCart} />
-          <TakeawayCart cartItems={cartItems} />
         </div>
+
+        <TakeawayCart cartItems={cartItems} />
       </div>
     </Layout>
   );
