@@ -79,6 +79,13 @@ const Menu = () => {
           </div>
         </div>
       </div>
+      <div>
+        <img
+          className={styles.address}
+          src="/assets/number-74.svg"
+          alt="Landing Image"
+        />
+      </div>
     </article>
   );
 };
