@@ -1,98 +1,113 @@
 .gridContainer {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
-  .item {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-  }
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
 
-#logo img{
-    padding-left: 16%;
-    width:70%;
-    margin-bottom: 2.4em;
+#logo img {
+  padding-left: 16%;
+  width: 70%;
+  margin-bottom: 2.4em;
 }
-.others p, .others h2{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.others p,
+.others h2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.others h2{
-    color:var(--accent-color);
-    margin-bottom: 1.2%;
-}
-.others p{
-    font-size: 24px;
-}
-.others a {
-    font-size: 24px;
-    display: inline-block;
-    text-decoration: underline;
-}
-.others {
-    padding-top: 9%;
-    padding-bottom: 12%;
-    text-align: center;
+.others h2 {
+  color: var(--accent-color);
+  margin-bottom: 1.2%;
 }
 .others p {
-    display:inline-block
+  font-size: 24px;
 }
-.item p, .item h4{
-    text-align: center;
-    padding-left: 7%;
-    padding-right: 7%;
-  }
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  @media (min-width: 1200px) {
-    .gridContainer {
-    grid-template-columns: repeat(auto-fit, minmax(calc((100% - 2 * 7%) / 3), 1fr));
-    }
+.others a {
+  font-size: 24px;
+  display: inline-block;
+  text-decoration: underline;
+}
+.others {
+  padding-top: 9%;
+  padding-bottom: 12%;
+  text-align: center;
+}
+.others p {
+  display: inline-block;
+}
+.item p,
+.item h4 {
+  text-align: center;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.mangiaLogo {
+  width: 5rem;
+}
+
+.circoloLogo {
+  width: 6rem;
+}
+
+@media (min-width: 1200px) {
+  .gridContainer {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc((100% - 2 * 7%) / 3), 1fr)
+    );
   }
-  @media (max-width: 898px) {
-    .itemInvisible{
-        display: none;
-    }
- 
-        .item h4{
-            margin-top: 0;
-        }
-        #logo img{
-            padding-bottom: 0;
-        }
+}
+@media (max-width: 898px) {
+  .itemInvisible {
+    display: none;
   }
-  @media (max-width: 600px) {
-    .item img{
-        /* height: 60%; */
-        width: 100%;
-        object-fit: contain;
-        }
-        .item p, .item img{
-            padding-bottom: 10%;
-            }
-            #logo img{
-                padding-left: 20%;
-                width:60%;
-                margin-bottom: 2.4em;
-            }
-            .item h4{
-               font-size: 24px;
-            }
-            .others h2{
-                font-size: 28px;
-            }
-            .others p, .others a{
-                font-size: 20px;
-            }
+
+  .item h4 {
+    margin-top: 0;
   }
+  #logo img {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .item img {
+    /* height: 60%; */
+    width: 100%;
+    object-fit: contain;
+  }
+  .item p,
+  .item img {
+    padding-bottom: 10%;
+  }
+  #logo img {
+    padding-left: 20%;
+    width: 60%;
+    margin-bottom: 2.4em;
+  }
+  .item h4 {
+    font-size: 24px;
+  }
+  .others h2 {
+    font-size: 28px;
+  }
+  .others p,
+  .others a {
+    font-size: 20px;
+  }
+}

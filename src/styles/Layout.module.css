@@ -1,4 +1,3 @@
-
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -16,18 +15,18 @@
 }
 
 .navLink p {
-  color: var(--black); 
+  color: var(--black);
   font-weight: 300;
   text-decoration: none;
   position: relative;
 }
 .navLink p:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .bookTableButton p {
   background-color: var(--accent-color);
-  color: var(--off-white); 
+  color: var(--off-white);
   padding: 8px 15px;
   border-radius: 25px;
   font-weight: 300;
@@ -35,26 +34,23 @@
 }
 
 .bookTableButton p:hover {
-opacity: 0.9;
-text-decoration: none !important;
+  opacity: 0.9;
+  text-decoration: none !important;
 }
 
 .navLinkText {
-  color: var(--black);
+  color: var(--grey);
   font-weight: 300;
   text-decoration: none;
   position: relative;
 }
 
-.navLinkText:hover {
-  text-decoration: underline;
-}
-
 .active {
-  font-weight: bold;
+  font-weight: 400 !important;
 }
 
 .dot {
   padding: 7px;
-  color: var(--black);
+  color: var(--grey);
+  font-weight: 400;
 }
