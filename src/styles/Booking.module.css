@@ -1,5 +1,32 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
+  width: 100vw;
 }
+
+.successMessage {
+  display: block;
+  text-align: center;
+}
+
+.backToMenu {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.check {
+  display: flex;
+  margin: auto;
+  justify-self: center;
+}
+
+.successMessageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+
