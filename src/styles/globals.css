@@ -67,6 +67,9 @@ a {
   font-weight: lighter;
   text-decoration: none;
 }
+a:hover{
+  opacity: 0.9;
+}
 @media (max-width: 898px) {
 }
 @media (max-width: 600px) {
