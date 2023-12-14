@@ -11,8 +11,8 @@ import {
   Row,
   Col,
 } from "antd";
-import dayjs from "dayjs";
-import { useMediaQuery } from "react-responsive";
+const { useMediaQuery } = require("react-responsive");
+const dayjs = require("dayjs");
 
 const BookingForm = () => {
   const { TextArea } = Input;
