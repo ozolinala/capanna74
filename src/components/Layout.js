@@ -47,6 +47,7 @@ const Layout = ({ children }) => {
         <div className={styles.logoContainer}>
           <img src="/assets/capanna-grey.svg" alt="Logo" />
         </div>
+        
         <div className={styles.addressContainer}>
           <p>Gammel Kongevej 74, København K</p>
           <p>+45 00 00 00 00 </p>
