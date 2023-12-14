@@ -8,6 +8,7 @@
 
 .navLinks {
   display: flex;
+  gap: 1rem;
 }
 
 .navLink {
@@ -46,10 +47,14 @@
 }
 
 .active {
-  font-weight: 400 !important;
+  font-weight: 300 !important;
 }
 
 .dot {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
   padding: 7px;
   color: var(--grey);
   font-weight: 400;
