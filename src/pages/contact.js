@@ -9,7 +9,7 @@ const Contact = () => {
         <div className={styles.contactInfo}>
           <div className={styles.contactInfoText}>
             <div>
-              <h2>Opening hours</h2>
+              <h4>Opening hours</h4>
               <p>
                 Tuesday, Wednesday, Thursday <b>17:30 - 23:00</b>
               </p>
@@ -18,13 +18,13 @@ const Contact = () => {
               </p>
             </div>
             <div>
-              <h2>Contacts</h2>
+              <h4>Contacts</h4>
               <p>Gammel Kongevej 74, Frederiksberg</p>
               <a href="mailto:info@capannadi74.dk">info@capanna74.dk</a>
               <p>+45 35 00 00 90</p>
             </div>
             <div>
-              <h2>Other restaurants</h2>
+              <h4>Other restaurants</h4>
               <div className={styles.otherRestaurants}>
                 <a href="https://mangia.dk/">Mangia</a>
                 <a href="https://www.ristorantecircolo.dk/">Circolo</a>

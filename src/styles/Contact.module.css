@@ -16,11 +16,13 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  
 }
 
-.contactInfoText h2 {
+.contactInfoText h4 {
   padding: 0;
   margin: 0;
+  color: var(--off-white);
 }
 
 .contactInfoText h2,
@@ -56,3 +58,4 @@
     padding: 1rem;
   }
 }
+

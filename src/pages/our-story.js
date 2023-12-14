@@ -1,11 +1,42 @@
-import React from 'react';
-import Layout from '../components/Layout';
+import React from "react";
+import Layout from "../components/Layout";
+import OurStoryGrid from "@/components/OurStoryGrid";
+import styles from "../styles/OurStory.module.css";
 
 const OurStory = () => {
   return (
-    <Layout>
-      <h2>Our Story</h2>
-      <p>This is the our story content.</p>
+    <Layout currentPage="yourComponent">
+      <OurStoryGrid></OurStoryGrid>
+      <div className={styles.others}>
+        <h2 classNamestyle={{ color: "var(--accent-color)" }}>
+          All about family
+        </h2>
+        <p>
+          Currently, we’re a family of three.
+          <br></br>Visit our sister restaurants
+          <br></br>
+          <a href="http://mangia.dk/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/assets/Mangia-logo.svg"
+              alt="Mangia" loading="lazy"
+              className={styles.mangiaLogo}
+            />
+          </a>
+          <span> & </span>
+          <a
+            href="https://www.ristorantecircolo.dk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/assets/Circolo-logo.svg"
+              alt="Circolo" loading="lazy" 
+              className={styles.circoloLogo}
+            />
+          </a>
+          .
+        </p>
+      </div>
     </Layout>
   );
 };
