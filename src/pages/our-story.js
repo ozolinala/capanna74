@@ -15,7 +15,6 @@ const OurStory = () => {
           Currently, we’re a family of three.
           <br></br>Visit our sister restaurants
           <br></br>
-
           <a href="http://mangia.dk/" target="_blank" rel="noopener noreferrer">
             <img
               src="/assets/Mangia-logo.svg"
