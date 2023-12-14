@@ -75,14 +75,14 @@ const Layout = ({ children }) => {
           <p className={styles.bold}>Other Restaurants</p>
           
           <a href="http://mangia.dk/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/mangia.svg" alt="Mangia" /></a>
+          <img src="/assets/mangia-logo.svg" alt="Mangia" /></a>
           <br />
           <a
             href="https://www.ristorantecircolo.dk/"
             target="_blank"
             rel="noopener noreferrer"
           >
-          <img src="/assets/circolo.svg" alt="Circolo" /></a>
+          <img src="/assets/circolo-logo.svg" alt="Circolo" /></a>
         </div>
       </div>
     </footer>

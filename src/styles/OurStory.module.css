@@ -38,8 +38,8 @@
   text-decoration: underline;
 }
 .others {
-  padding-top: 9%;
-  padding-bottom: 12%;
+  padding-top: 12%;
+  padding-bottom: 16%;
   text-align: center;
 }
 .others p {
@@ -58,6 +58,7 @@
 }
 
 .mangiaLogo {
+  margin-top: 8px;
   width: 5rem;
 }
 
