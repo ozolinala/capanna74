@@ -61,6 +61,61 @@
   font-weight: 400;
 }
 
+/* responsiveness for nav bar*/
+
+.menuIcon {
+  display: none;
+  cursor: pointer;
+}
+
+.navLinksMobile {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  /* background-color: var(--off-white); */
+  z-index: 1;
+}
+
+.navLinksMobile.active {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block; 
+    margin-left: auto;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .navLinks.active {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    position: absolute;
+    top: 60px;
+    right: 0; 
+    width: 100%;
+    background-color: var(--off-white);
+    z-index: 1;
+  }
+
+  .navLink {
+    margin-right: 0; 
+  }
+
+  .bookTableButton {
+    margin-left: 0; 
+  }
+}
+
+
 /* footer */
 
 .footer {

@@ -1,17 +1,15 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/Layout.module.css'; 
 
 const Layout = ({ children }) => {
   const router = useRouter();
+  const [menuActive, setMenuActive] = useState(false);
 
-  // Extract the pathname from the router object
   const currentPage = router.pathname.replace('/', ''); 
   const currentPageNormalized = currentPage.toLowerCase().replace(/\s+/g, '-');
 
-  console.log("current page",currentPage)
-  
   const menuItems = [
     { id: 1, label: 'Menu', link: '/menu' },
     { id: 2, label: 'Takeaway', link: '/takeaway' },
@@ -21,25 +19,28 @@ const Layout = ({ children }) => {
 
   return (
     <div className={styles.container}>
-    <nav className={styles.nav}>
-      <div className={styles.navLinks}>
-        {menuItems.map((item) => (
-          <div key={item.id} className={styles.navLink}>
-            <Link href={item.link}>
-            <p className={`${styles.navLinkText} ${currentPageNormalized === item.label.toLowerCase().replace(/\s+/g, '-') ? styles.active : ''}`}>
-        {currentPageNormalized === item.label.toLowerCase().replace(/\s+/g, '-') && <span className={styles.dot}> •</span>}
-        {item.label}
-      </p>
-            </Link>
-          </div>
-        ))}
-      </div>
-      <div className={styles.bookTableButton}>
-        <Link href="/bookings">
-          <p>Book a Table</p>
-        </Link>
-      </div>
-    </nav>
+      <nav className={styles.nav}>
+        <div className={styles.menuIcon} onClick={() => setMenuActive(!menuActive)}>
+          ☰
+        </div>
+        <div className={`${styles.navLinks} ${menuActive && styles.active}`}>
+          {menuItems.map((item) => (
+            <div key={item.id} className={styles.navLink}>
+              <Link href={item.link}>
+                <p className={`${styles.navLinkText} ${currentPageNormalized === item.label.toLowerCase().replace(/\s+/g, '-') ? styles.active : ''}`}>
+                  {currentPageNormalized === item.label.toLowerCase().replace(/\s+/g, '-') && <span className={styles.dot}> •</span>}
+                  {item.label}
+                </p>
+              </Link>
+            </div>
+          ))}
+        </div>
+        <div className={styles.bookTableButton}>
+          <Link href="/bookings">
+            <p>Book a Table</p>
+          </Link>
+        </div>
+      </nav>
       <main>{children}</main>
       <footer className={styles.footer}>
       <div className={styles.leftContainer}>
