@@ -9,14 +9,20 @@ html {
 
 @font-face {
   font-family: "Publish Gothic";
-  src: url("/fonts/PublishGothicExpanded-Extralight") format("otf");
-  src: url("/fonts/PublishGothicExpanded-Light") format("otf");
-  src: url("/fonts/PublishGothicExpanded-Regular") format("otf");
+  src: url("/fonts/PublishGothicExpanded-Extralight.woff") format("woff"),
+       url("/fonts/PublishGothicExpanded-Extralight.woff2") format("woff2"),
+       url("/fonts/PublishGothicExpanded-Light.woff") format("woff"),
+       url("/fonts/PublishGothicExpanded-Light.woff2") format("woff2"),
+       url("/fonts/PublishGothicExpanded-Regular.woff") format("woff"),
+       url("/fonts/PublishGothicExpanded-Regular.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Italian Plate X";
-  src: url("/fonts/IPNoX-Regular.otf") format("otf");
+  src: url("/fonts/IPNoX-Regular.woff") format("woff"),
+       url("/fonts/IPNoX-Regular.woff2") format("woff2");
 }
+
 
 body {
   font-family: "Publish Gothic", sans-serif;
