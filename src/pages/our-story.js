@@ -18,7 +18,7 @@ const OurStory = () => {
           <a href="http://mangia.dk/" target="_blank" rel="noopener noreferrer">
             <img
               src="/assets/Mangia-logo.svg"
-              alt="Mangia"
+              alt="Mangia" loading="lazy"
               className={styles.mangiaLogo}
             />
           </a>
@@ -30,7 +30,7 @@ const OurStory = () => {
           >
             <img
               src="/assets/Circolo-logo.svg"
-              alt="Circolo"
+              alt="Circolo" loading="lazy" 
               className={styles.circoloLogo}
             />
           </a>

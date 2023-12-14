@@ -29,7 +29,7 @@ const OurStoryGrid = ({}) => {
 
       <div className={`${styles.itemInvisible} ${styles.item}`}></div>
       <div className={`${styles.item} ${styles.image}`}>
-        <img src="/assets/our-story3.png" alt="Chef in the kitchen"></img>
+        <img src="/assets/our-story3.png" loading="lazy" alt="Chef in the kitchen"></img>
       </div>
       <div className={styles.item}>
         <h4>Simple ingredients, Rich flavours</h4>
@@ -45,7 +45,7 @@ const OurStoryGrid = ({}) => {
       </div>
 
       <div className={`${styles.itemInvisible} ${styles.item} ${styles.image}`}>
-        <img src="/assets/our-story4.png" alt="Making pasta"></img>
+        <img src="/assets/our-story4.png" loading="lazy" alt="Making pasta"></img>
       </div>
       <div className={styles.item}>
         <h4>Our heart and soul</h4>
@@ -62,7 +62,7 @@ const OurStoryGrid = ({}) => {
         </p>
       </div>
       <div className={`${styles.item} ${styles.image}`}>
-        <img src="/assets/our-story5.png" alt="The team"></img>
+        <img src="/assets/our-story5.png" loading="lazy" alt="The team"></img>
       </div>
     </div>
   );
