@@ -1,3 +1,5 @@
+/* nav bar */
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -58,4 +60,70 @@
   padding: 7px;
   color: var(--grey);
   font-weight: 400;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  background-color: var(--light-grey);
+  color: white;
+  padding: 3%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.leftContainer,
+.rightContainer {
+  flex: 1;
+}
+
+.leftContainer {
+  text-align: left;
+}
+.leftContainer p, .rightContainer p  {
+  font-size: 18px;
+  margin: 0 0 4px 0;
+}
+.rightContainer {
+  text-align: right;
+}
+.logoContainer {
+  margin-bottom: 6%;
+}
+.logoContainer img {
+    max-height: 2.5rem;
+}
+.bold {
+  font-weight: 500;
+}
+.sisterRestaurantsContainer img, .socialMediaContainer img{
+max-width:5rem;
+margin:1% 1% 0 0;
+}
+
+
+@media (max-width: 600px) {
+  .logoContainer img {
+    padding-bottom: 4%;
+}
+  .footer {
+    flex-direction: column;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin-top: 25%;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  .itemInvisible{
+    display: none;
+  }
+  .sisterRestaurantsContainer img{
+    margin-bottom: 1%;
+    }
 }
