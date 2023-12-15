@@ -17,3 +17,42 @@
 .customDots {
   height: 100px;
 }
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stampContainer {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: var(--accent-color); /* Set your desired background color */
+  overflow: hidden;
+}
+
+.spinningText {
+  position: absolute;
+  width: 4.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px; /* Set your desired font size */
+  color: #fff; /* Set your desired text color */
+  animation: spin 8s linear infinite; /* Adjust the animation duration and timing function as needed */
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

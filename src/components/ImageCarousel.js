@@ -26,6 +26,18 @@ const ImageCarousel = ({ images }) => {
           </div>
         ))}
       </Slider>
+      <img
+        src="/assets/Capanna-logo.svg"
+        alt="Capanna"
+        className={styles.logo}
+      />
+      <div className={styles.stampContainer}>
+        <img
+          src="/assets/book-text.png"
+          alt="Mangia"
+          className={styles.spinningText}
+        />
+      </div>
     </div>
   );
 };
