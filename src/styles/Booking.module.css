@@ -7,6 +7,10 @@
 
 .formContainer label {
   font-size: 14px;
+  position: "absolute";
+  transform: "translateY(5px)";
+  background: "#fff";
+  padding: "0 5px";
 }
 
 .formContainer input {
@@ -14,7 +18,7 @@
   margin: 0;
   padding: 4px 11px;
   color: var(--black);
-  line-height: 1.5rem;
+  line-height: 2rem;
   border-width: 1px;
   border-style: solid;
   border-color: #d9d9d9;
@@ -119,6 +123,12 @@
   justify-content: center;
   align-items: center;
   height: 90vh;
+}
+
+.star {
+  font-weight: 500;
+  color: var(--accent-color);
+  font-size: 26px;
 }
 
 @media (max-width: 768px) {

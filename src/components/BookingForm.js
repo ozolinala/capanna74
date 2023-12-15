@@ -53,48 +53,112 @@ const BookingForm = () => {
             >
               <div className={styles.leftColumn}>
                 <div>
-                  <label htmlFor="first-name">First name:</label>
+                  <label
+                    style={{
+                      position: "absolute",
+                      transform: "translateX(15px)",
+                      backgroundColor: "#fff",
+                      lineHeight: "0px",
+                      paddingLeft: "10px",
+                      paddingRight: "8px",
+                    }}
+                    htmlFor="first-name"
+                  >
+                    First name <span class={styles.star}>*</span>
+                  </label>
                   <input type="text" id="first-name" required />
                 </div>
 
                 <div>
-                  <label htmlFor="last-name">Last name:</label>
-                  <input type="text" id="last-name" required />
+                  <label
+                    style={{
+                      position: "absolute",
+                      transform: "translateX(15px)",
+                      backgroundColor: "#fff",
+                      lineHeight: "0px",
+                      paddingLeft: "10px",
+                      paddingRight: "8px",
+                    }}
+                    htmlFor="last-name"
+                  >
+                    Last name <span class={styles.star}>*</span>
+                  </label>
+                  <input type="text" id="last-name" requ2pxired />
                 </div>
 
                 <div>
-                  <label htmlFor="email">E-mail:</label>
+                  <label
+                    style={{
+                      position: "absolute",
+                      transform: "translateX(15px)",
+                      backgroundColor: "#fff",
+                      lineHeight: "1px",
+                      paddingLeft: "10px",
+                      paddingRight: "8px",
+                    }}
+                    htmlFor="email"
+                  >
+                    E-mail
+                  </label>
                   <input type="email" id="email" required />
                 </div>
 
                 <div>
-                  <label htmlFor="phone-number">Phone number:</label>
-                  <div>
-                    <input
-                      type="tel"
-                      id="phone-prefix"
-                      className={styles.phonePrefix}
-                      name="phone-prefix"
-                      placeholder="+45"
-                    />
-                    <input
-                      type="tel"
-                      id="phone-number"
-                      name="phone-number"
-                      placeholder="00 00 00 00"
-                    />
-                  </div>
+                  <label
+                    style={{
+                      position: "absolute",
+                      transform: "translateX(15px)",
+                      backgroundColor: "#fff",
+                      lineHeight: "0px",
+                      paddingLeft: "10px",
+                      paddingRight: "8px",
+                    }}
+                    htmlFor="phone-number"
+                  >
+                    Phone number <span class={styles.star}>*</span>
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="phone-number"
+                    name="phone-number"
+                    placeholder="+45 00 00 00 00"
+                  />
                 </div>
               </div>
 
               <div className={styles.rightColumn}>
                 <div>
-                  <label htmlFor="comment">Comment:</label>
+                  <label
+                    style={{
+                      position: "absolute",
+                      transform: "translateX(15px)",
+                      backgroundColor: "#fff",
+                      lineHeight: "1px",
+                      paddingLeft: "10px",
+                      paddingRight: "8px",
+                    }}
+                    htmlFor="comment"
+                  >
+                    Comment
+                  </label>
                   <textarea id="comment" rows="4" />
                 </div>
 
                 <div>
-                  <label htmlFor="date">Select a date:</label>
+                  <label
+                    style={{
+                      position: "absolute",
+                      transform: "translateX(15px)",
+                      backgroundColor: "#fff",
+                      lineHeight: "0px",
+                      paddingLeft: "10px",
+                      paddingRight: "8px",
+                    }}
+                    htmlFor="date"
+                  >
+                    Select a date<span class={styles.star}>*</span>{" "}
+                  </label>
                   <input
                     type="date"
                     id="date"
@@ -103,7 +167,19 @@ const BookingForm = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="time">Select a time:</label>
+                  <label
+                    style={{
+                      position: "absolute",
+                      transform: "translateX(15px)",
+                      backgroundColor: "#ffffff",
+                      lineHeight: "0px",
+                      paddingLeft: "10px",
+                      paddingRight: "8px",
+                    }}
+                    htmlFor="time"
+                  >
+                    Select a time <span class={styles.star}>*</span>
+                  </label>
                   <input type="time" id="time" />
                 </div>
 
