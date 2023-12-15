@@ -56,3 +56,37 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+.button {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .button {
+    display: block;
+    position: absolute;
+    justify-self: center;
+    align-self: end;
+    color: var(--off-white);
+    background-color: var(--accent-color);
+    padding: 8px 13px;
+    border-radius: 25px;
+    text-decoration: none !important;
+    font-size: 24px;
+    margin-bottom: 4vh;
+  }
+  .Picture2 {
+    display: none;
+  }
+  .Picture3 {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .contactInfoText {
+    padding: 1rem;
+  }
+}
