@@ -30,8 +30,8 @@
   top: 40%;
   left: 70%;
   transform: translate(-50%, -50%);
-  width: 75px;
-  height: 75px;
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
   background-color: var(--accent-color); /* Set your desired background color */
   overflow: hidden;
@@ -39,7 +39,7 @@
 
 .spinningText {
   position: absolute;
-  width: 4.5rem;
+  width: 4.8rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
