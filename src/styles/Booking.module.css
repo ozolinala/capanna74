@@ -1,5 +1,63 @@
-.container {
+.formContainer {
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+}
+
+.formContainer label {
+  font-size: 14px;
+}
+
+.formContainer input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 4px 11px;
+  color: var(--black);
+  line-height: 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-family: "Publish Gothic Regular", sans-serif;
+}
+
+.formContainer input:focus {
+  outline: none;
+}
+
+.formContainer textarea:focus {
+  outline: none;
+}
+
+.formContainer textarea {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 4px 11px;
+  color: var(--black);
+  line-height: 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-family: "Publish Gothic Regular", sans-serif;
+}
+
+.leftColumn,
+.rightColumn {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.leftColumn > div,
+.rightColumn > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
 }
 
 .successMessage {
@@ -9,7 +67,6 @@
 
 .backToMenu {
   display: block;
-  text-align: center;
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 1px;
@@ -29,16 +86,38 @@
   gap: 4vh;
   align-content: center;
   justify-content: center;
+  text-align: center;
 }
 
-.buttonContainer {
+.button {
   display: flex;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-.buttonContainerMobile {
-  display: flex;
-  width: 100%;
+  width: 8rem;
   justify-content: center;
+  padding: 0.6rem;
+  border-radius: 20px;
+  border: 0;
+  background-color: var(--accent-color);
+  color: var(--off-white);
+  font-size: 20px;
+  font-family: "Publish Gothic", sans-serif;
+}
+
+.phonePrefix {
+  width: 4rem;
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    flex-direction: column;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    width: 85vw;
+    margin: auto;
+  }
+
+  .button {
+    align-self: center;
+  }
 }
