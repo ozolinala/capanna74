@@ -81,6 +81,7 @@
 }
 
 .successMessageContainer {
+  align-self: center;
   display: flex;
   flex-direction: column;
   gap: 4vh;
@@ -100,10 +101,24 @@
   color: var(--off-white);
   font-size: 20px;
   font-family: "Publish Gothic", sans-serif;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.9;
 }
 
 .phonePrefix {
   width: 4rem;
+}
+
+.bookingsContainer {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
 @media (max-width: 768px) {
