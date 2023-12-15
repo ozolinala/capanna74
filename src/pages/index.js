@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import ImageCarousel from "../components/ImageCarousel";
 import Menu from "../components/Menu";
+import styles from "../styles/LandingPage.module.css";
 
 const images = [
   "/assets/contacts-image.jpg",
@@ -18,8 +19,12 @@ const images = [
 const HomePage = () => {
   return (
     <Layout>
-      <ImageCarousel images={images} />
-      <Menu />
+      <div className={styles.backgroundColor}>
+        <ImageCarousel images={images} />
+        <div id="menu">
+          <Menu />
+        </div>
+      </div>
     </Layout>
   );
 };

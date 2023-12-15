@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "../styles/LandingGrid.module.css";
+import Link from "next/link";
 
 const ImageCarousel = ({ images }) => {
   const settings = {
@@ -31,13 +32,15 @@ const ImageCarousel = ({ images }) => {
         alt="Capanna"
         className={styles.logo}
       />
-      <div className={styles.stampContainer}>
-        <img
-          src="/assets/book-text.png"
-          alt="Mangia"
-          className={styles.spinningText}
-        />
-      </div>
+      <Link href="/bookings">
+        <div className={styles.stampContainer}>
+          <img
+            src="/assets/book-text.png"
+            alt="Mangia"
+            className={styles.spinningText}
+          />
+        </div>
+      </Link>
     </div>
   );
 };

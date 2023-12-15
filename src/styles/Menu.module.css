@@ -1,9 +1,13 @@
 .menuList {
   text-align: center;
+  
 }
 
 .menuList h2 {
-  padding: 0;
+  margin: 0;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  padding-left: 0;
 }
 
 .menuItemsContainer {
@@ -16,25 +20,38 @@
 .menuItems {
   display: flex;
   flex-direction: column;
-  gap: 3vh;
+  align-items: center;
+  gap: 6vh;
 }
 
 .menuItems h3 {
   text-align: center;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  border-top: 1px solid var(--black);
-  border-bottom: 1px solid var(--black);
+  border-top: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+  width: 9rem;
+  font-weight: bold;
+}
+
+.menuItems h5 {
+  font-size: 20px;
+  font-weight: bold !important;
+  margin: 0;
+  color: var(--grey);
+  font-family: "Publish Gothic";
 }
 
 .menuItems p {
   margin: 1vh;
+  font-weight: lighter;
+  color: var(--grey) !important;
 }
 
 .address {
   position: fixed;
   transform: rotate(270deg);
-  z-index: 40;
+  z-index: -10;
   left: 1rem;
   bottom: 6vh;
 }

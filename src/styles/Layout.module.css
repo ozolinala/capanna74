@@ -3,8 +3,9 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1px;
+  padding: 1rem;
   padding-right: 2%;
+  background-color: #fff;
 }
 
 .navLinks {
@@ -86,7 +87,7 @@
 
 @media (max-width: 768px) {
   .menuIcon {
-    display: block; 
+    display: block;
     margin-left: auto;
   }
 
@@ -100,21 +101,20 @@
     gap: 0.1rem;
     position: absolute;
     top: 60px;
-    right: 0; 
+    right: 0;
     width: 100%;
     background-color: var(--off-white);
     z-index: 1;
   }
 
   .navLink {
-    margin-right: 0; 
+    margin-right: 0;
   }
 
   .bookTableButton {
-    margin-left: 0; 
+    margin-left: 0;
   }
 }
-
 
 /* footer */
 
@@ -135,7 +135,8 @@
 .leftContainer {
   text-align: left;
 }
-.leftContainer p, .rightContainer p  {
+.leftContainer p,
+.rightContainer p {
   font-size: 18px;
   margin: 0 0 4px 0;
 }
@@ -146,20 +147,21 @@
   margin-bottom: 6%;
 }
 .logoContainer img {
-    max-height: 2.5rem;
+  max-height: 2.5rem;
 }
 .bold {
   font-weight: 500;
 }
-.sisterRestaurantsContainer img, .socialMediaContainer img{
-max-width:5rem;
-margin:1% 1% 0 0;
+.sisterRestaurantsContainer img,
+.socialMediaContainer img {
+  max-width: 5rem;
+  margin: 1% 1% 0 0;
 }
 
 @media (max-width: 600px) {
   .logoContainer img {
     padding-bottom: 4%;
-}
+  }
   .footer {
     flex-direction: column;
     padding-top: 20%;
@@ -173,10 +175,10 @@ margin:1% 1% 0 0;
     text-align: left;
     margin-bottom: 0px;
   }
-  .itemInvisible{
+  .itemInvisible {
     display: none;
   }
-  .sisterRestaurantsContainer img{
+  .sisterRestaurantsContainer img {
     margin-bottom: 1%;
-    }
+  }
 }
