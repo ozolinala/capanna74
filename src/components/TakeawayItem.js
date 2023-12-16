@@ -4,16 +4,20 @@ const TakeawayItem = ({ item, onAddToCart }) => {
   const [quantity, setQuantity] = useState(0);
 
   const handleAddClick = () => {
-    const updatedQuantity = quantity + 1;
-    setQuantity(updatedQuantity);
-    onAddToCart({ ...item, quantity: updatedQuantity });
+    setQuantity((prevQuantity) => {
+      const updatedQuantity = prevQuantity + 1;
+      onAddToCart({ ...item, quantity: updatedQuantity });
+      return updatedQuantity;
+    });
   };
 
   const handleRemoveClick = () => {
     if (quantity > 0) {
-      const updatedQuantity = quantity - 1;
-      setQuantity(updatedQuantity);
-      onAddToCart({ ...item, quantity: updatedQuantity });
+      setQuantity((prevQuantity) => {
+        const updatedQuantity = prevQuantity - 1;
+        onAddToCart({ ...item, quantity: updatedQuantity });
+        return updatedQuantity;
+      });
     }
   };
 

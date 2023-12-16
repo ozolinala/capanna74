@@ -11,11 +11,11 @@ const TakeawayCart = ({ cartItems }) => {
       <ul>
         {cartItems.map((item) => (
           <li key={item.id}>
-            {item.name} - ${item.price} x {item.quantity}
+            {item.name} - DKK{item.price} x {item.quantity}
           </li>
         ))}
       </ul>
-      <p>Total: ${calculateTotal()}</p>
+      <p>Total: DKK{calculateTotal()}</p>
     </div>
   );
 };

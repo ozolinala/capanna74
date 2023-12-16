@@ -16,7 +16,20 @@ const Takeaway = () => {
   };
 
   const handleAddToCart = (item) => {
-    setCartItems([...cartItems, item]);
+    setCartItems((prevCartItems) => {
+      // Check if the item is already in the cart
+      const existingItemIndex = prevCartItems.findIndex((cartItem) => cartItem.id === item.id);
+
+      // If the item is already in the cart, update its quantity
+      if (existingItemIndex !== -1) {
+        const updatedCartItems = [...prevCartItems];
+        updatedCartItems[existingItemIndex] = item;
+        return updatedCartItems;
+      }
+
+      // If the item is not in the cart, add it
+      return [...prevCartItems, item];
+    });
   };
 
   return (
