@@ -31,7 +31,11 @@ const TakeawayInfo = ({ orderComplete, setOrderComplete }) => {
         {success ? (
           <div className={styles.bookingsContainer}>
             <div className={styles.successMessageContainer}>
-              <p className={styles.successMessage}>You have successfully made a reservation!</p>
+              <p className={styles.successMessage}>
+                Thank you for your order!
+                <br />
+                Your food will be ready in 20 minutes.
+              </p>
               <img src="/assets/check.svg" alt="Checkmark" className={styles.check} />
               <Link className={styles.backToMenu} href="/">
                 Go back to menu
