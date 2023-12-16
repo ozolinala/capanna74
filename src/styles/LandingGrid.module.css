@@ -47,7 +47,9 @@
   color: #fff; /* Set your desired text color */
   animation: spin 8s linear infinite; /* Adjust the animation duration and timing function as needed */
 }
+
 /* scroll icon */
+
 .scrollIndicator {
   position: absolute;
   bottom: 50px;
@@ -72,9 +74,9 @@
 }
 
 .downArrow {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
   animation: jumpAnimation 1.8s infinite; /* Adjust the duration as needed */
 
 }
@@ -127,5 +129,9 @@
 
   .contactInfoText {
     padding: 1rem;
+  }
+  .scrollIndicator {
+    bottom: 50px;
+    left: 87%;
   }
 }
