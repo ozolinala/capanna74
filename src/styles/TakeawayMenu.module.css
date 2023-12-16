@@ -36,3 +36,34 @@
   margin-right: 0.5em;
   vertical-align: middle;
 }
+
+.takeawayContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  padding-left: 4rem;
+}
+
+.menuNavbar {
+  display: flex;
+  gap: 3rem;
+}
+
+.takeawayLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cartContainer {
+  background-color: var(--accent-color);
+  padding-right: 10rem;
+  width: 15rem;
+}
+
+.takeawayList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

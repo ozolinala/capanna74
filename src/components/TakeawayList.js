@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TakeawayItem from "./TakeawayItem";
+import styles from "../styles/TakeawayMenu.module.css";
 
 const MenuItem = ({ item, onAddToCart }) => {
   const [quantity, setQuantity] = useState(0);
@@ -30,7 +31,7 @@ const MenuItem = ({ item, onAddToCart }) => {
 
 const TakeawayList = ({ items, onAddToCart }) => {
   return (
-    <ul>
+    <ul className={styles.takeawayList}>
       {items.map((item) => (
         <TakeawayItem key={item.id} item={item} onAddToCart={onAddToCart} />
       ))}

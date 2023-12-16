@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "../styles/TakeawayMenu.module.css";
 
 const TakeawayItem = ({ item, onAddToCart }) => {
   const [quantity, setQuantity] = useState(0);
