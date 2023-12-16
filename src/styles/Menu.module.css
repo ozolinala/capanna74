@@ -1,11 +1,11 @@
 .menuList {
   text-align: center;
-  
+  padding-bottom: 15%;
 }
 
 .menuList h2 {
   margin: 0;
-  padding-top: 10rem;
+  padding-top: 7rem;
   padding-bottom: 3rem;
   padding-left: 0;
   font-family: "Publish Gothic Demibold", "Publish Gothic", sans-serif;
@@ -33,6 +33,7 @@
   border-top: 1px solid var(--grey);
   border-bottom: 1px solid var(--grey);
   width: 8rem;
+  padding-left: 0;
   font-weight: bold;
   
   

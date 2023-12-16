@@ -183,7 +183,7 @@ const BookingForm = () => {
                   <input type="time" id="time" />
                 </div>
 
-                <div>
+                <div className={styles.buttoncontainer} >
                   <button className={styles.button} type="submit">
                     Submit
                   </button>

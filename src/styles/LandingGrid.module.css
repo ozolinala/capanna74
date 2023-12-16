@@ -5,7 +5,7 @@
 }
 
 .slide {
-  height: 80vh;
+  height: 87vh;
 }
 
 .slide img {
@@ -48,6 +48,47 @@
   animation: spin 8s linear infinite; /* Adjust the animation duration and timing function as needed */
 }
 
+/* scroll icon */
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 50px;
+  left: 90%;
+  background-color: var(--off-white);
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scrollContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scrollText {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+.downArrow {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  animation: jumpAnimation 1.8s infinite; /* Adjust the duration as needed */
+
+}
+@keyframes jumpAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
 @keyframes spin {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -88,5 +129,9 @@
 
   .contactInfoText {
     padding: 1rem;
+  }
+  .scrollIndicator {
+    bottom: 50px;
+    left: 87%;
   }
 }

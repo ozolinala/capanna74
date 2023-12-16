@@ -20,6 +20,7 @@
 .navLink p {
   color: var(--black);
   font-weight: 300;
+  font-size: 17px;
   text-decoration: none;
   position: relative;
 }
@@ -83,6 +84,11 @@
 
 .navLinksMobile.active {
   display: flex;
+}
+
+.menuIcon img {
+  height:1.5rem;
+  padding-right: 5%;
 }
 
 @media (max-width: 768px) {
