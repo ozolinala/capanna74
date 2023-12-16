@@ -60,7 +60,7 @@
   flex-direction: column;
   background-color: var(--accent-color);
   width: 16rem;
-  padding: 2rem;
+  padding: 1.8rem;
   color: var(--off-white);
   position: fixed;
   right: 0;
@@ -75,6 +75,8 @@
 .cartContainer h2 {
   color: var(--off-white);
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .cartContainer p {
@@ -134,4 +136,18 @@
 .cartListItem {
   display: flex;
   justify-content: space-between;
+}
+
+.total {
+  border-top: 1px solid var(--off-white);
+  padding-top: 0.2rem;
+}
+
+.orderButton {
+  padding: 0.5rem;
+  background-color: var(--off-white);
+  border: 0;
+  border-radius: 50px;
+  color: var(--accent-color);
+  font-weight: 600;
 }
