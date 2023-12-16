@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TakeawayItem from "./TakeawayItem";
 
-const MenuItem = ({ item, onAddToCart }) => {
+const TakeawayList = ({ items, onAddToCart }) => {
   const [quantity, setQuantity] = useState(0);
 
   const handleAddClick = () => {
@@ -15,20 +15,6 @@ const MenuItem = ({ item, onAddToCart }) => {
       onAddToCart({ ...item, quantity: quantity - 1 });
     }
   };
-
-  return (
-    <li>
-      <span>
-        {item.name} - ${item.price}
-      </span>
-      <button onClick={handleRemoveClick}>-</button>
-      <span>{quantity}</span>
-      <button onClick={handleAddClick}>+</button>
-    </li>
-  );
-};
-
-const TakeawayList = ({ items, onAddToCart }) => {
   return (
     <ul>
       {items.map((item) => (
