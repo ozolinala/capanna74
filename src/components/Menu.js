@@ -10,7 +10,7 @@ const Menu = () => {
           <h3>Antipasti</h3>
           <div>
             <b>
-              <h5>N°1. Bruschetta al Pomodoro • DKK40</h5>
+              <h5>N°1. Bruschetta al Pomodoroo • DKK40</h5>
             </b>
             <p>Toasted bread with diced tomatoes, garlic, basil, and olive oil</p>
           </div>
