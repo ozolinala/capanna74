@@ -64,7 +64,7 @@ const BookingForm = () => {
                     }}
                     htmlFor="first-name"
                   >
-                    First name <span class={styles.star}>*</span>
+                    First name <span className={styles.star}>*</span>
                   </label>
                   <input type="text" id="first-name" required />
                 </div>
@@ -81,7 +81,7 @@ const BookingForm = () => {
                     }}
                     htmlFor="last-name"
                   >
-                    Last name <span class={styles.star}>*</span>
+                    Last name <span className={styles.star}>*</span>
                   </label>
                   <input type="text" id="last-name" requ2pxired />
                 </div>
@@ -115,7 +115,7 @@ const BookingForm = () => {
                     }}
                     htmlFor="phone-number"
                   >
-                    Phone number <span class={styles.star}>*</span>
+                    Phone number <span className={styles.star}>*</span>
                   </label>
 
                   <input
@@ -157,7 +157,7 @@ const BookingForm = () => {
                     }}
                     htmlFor="date"
                   >
-                    Select a date<span class={styles.star}>*</span>{" "}
+                    Select a date<span className={styles.star}>*</span>{" "}
                   </label>
                   <input
                     type="date"
@@ -178,7 +178,7 @@ const BookingForm = () => {
                     }}
                     htmlFor="time"
                   >
-                    Select a time <span class={styles.star}>*</span>
+                    Select a time <span className={styles.star}>*</span>
                   </label>
                   <input type="time" id="time" />
                 </div>
