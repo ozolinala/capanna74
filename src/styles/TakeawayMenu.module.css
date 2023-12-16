@@ -151,3 +151,15 @@
   color: var(--accent-color);
   font-weight: 600;
 }
+
+.goBackButton {
+  display: flex;
+  justify-content: start;
+  font-size: 14px;
+  border: 0;
+  color: var(--accent-color);
+  background-color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  padding: 1rem;
+}
