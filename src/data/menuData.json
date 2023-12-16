@@ -1,0 +1,149 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Antipasti",
+      "items": [
+        {
+          "id": 101,
+          "name": "Bruschetta al Pomodoro",
+          "description": "Toasted bread with diced tomatoes, garlic, basil, and olive oil.",
+          "price": 40
+        },
+        {
+          "id": 102,
+          "name": "Caprese Salad",
+          "description": "Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.",
+          "price": 60
+        },
+        {
+          "id": 103,
+          "name": "Prosciutto e Melone",
+          "description": "Thinly sliced prosciutto served with melon.",
+          "price": 70
+        },
+        {
+          "id": 104,
+          "name": "Olives Miste",
+          "description": "Mixed marinated olives.",
+          "price": 50
+        },
+        {
+          "id": 105,
+          "name": "Crostini con Formaggio di Capra e Miele",
+          "description": "Crostini with goat cheese and honey.",
+          "price": 80
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pasta",
+      "items": [
+        {
+          "id": 201,
+          "name": "Spaghetti alla Carbonara",
+          "description": "Classic Roman pasta with guanciale, egg, and pepper.",
+          "price": 85
+        },
+        {
+          "id": 202,
+          "name": "Fusilli al Pesto",
+          "description": "Spiral pasta with traditional Genovese pesto.",
+          "price": 75
+        },
+        {
+          "id": 203,
+          "name": "Spaghetti Aglio, Olio e Peperoncino",
+          "description": "Spaghetti with oil, toasted garlic, and peperoncino.",
+          "price": 90
+        },
+        {
+          "id": 204,
+          "name": "Penne all’Amatriciana",
+          "description": "Penne with tomato sauce, meat, and basil.",
+          "price": 95
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dolci",
+      "items": [
+        {
+          "id": 301,
+          "name": "Tiramisu",
+          "description": "Ladyfingers, Espresso, Mascarpone, Eggs, Sugar, Cocoa Powder.",
+          "price": 65
+        },
+        {
+          "id": 302,
+          "name": "Sorbetto al Limone",
+          "description": "Lemon juice-flavored ice slush.",
+          "price": 55
+        },
+        {
+          "id": 303,
+          "name": "Panna Cotta",
+          "description": "Creamy Italian dessert with heavy cream and vanilla extract.",
+          "price": 75
+        },
+        { "id": 304, "name": "Amaretti", "description": "Almond cookies.", "price": 40 }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Drinks",
+      "items": [
+        {
+          "id": 401,
+          "name": "Aperol Spritz",
+          "description": "Aperol, Prosecco, and soda.",
+          "price": 80
+        },
+        {
+          "id": 402,
+          "name": "Mojito",
+          "description": "White rum, lime juice, and mint leaves.",
+          "price": 85
+        },
+        {
+          "id": 403,
+          "name": "Negroni",
+          "description": "Gin, red vermouth, and Campari.",
+          "price": 95
+        },
+        {
+          "id": 404,
+          "name": "Martini",
+          "description": "Gin stirred with dry vermouth.",
+          "price": 90
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Wine",
+      "items": [
+        {
+          "id": 501,
+          "name": "Chianti Classico",
+          "description": "Red wine from Tuscany, Italy.",
+          "price": 95
+        },
+        {
+          "id": 502,
+          "name": "Barolo",
+          "description": "Red wine from Piedmont, Italy.",
+          "price": 110
+        },
+        {
+          "id": 503,
+          "name": "Vermentino",
+          "description": "White wine from Sardinia, Italy.",
+          "price": 110
+        }
+      ]
+    }
+  ]
+}
