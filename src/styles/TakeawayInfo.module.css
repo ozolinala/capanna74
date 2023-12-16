@@ -1,0 +1,153 @@
+.formContainer {
+  width: 100vw;
+  justify-content: center;
+  gap: 10vw;
+  padding-bottom: 15%;
+  padding-top: 4%;
+}
+
+.formContainer label {
+  font-size: 14px;
+  position: "absolute";
+  transform: "translateY(5px)";
+  background: "#fff";
+  padding: "0 5px";
+}
+
+.formContainer input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 4px 11px;
+  color: var(--black);
+  line-height: 2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-family: "Publish Gothic Regular", sans-serif;
+  margin-bottom: 2%;
+}
+
+.formContainer input:focus {
+  outline: none;
+}
+
+.formContainer textarea:focus {
+  outline: none;
+}
+
+.formContainer textarea {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 4px 11px;
+  color: var(--black);
+  line-height: 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-family: "Publish Gothic Regular", sans-serif;
+}
+
+.leftColumn,
+.rightColumn {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.leftColumn > div,
+.rightColumn > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.successMessage {
+  display: block;
+  text-align: center;
+}
+
+.backToMenu {
+  display: block;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.check {
+  display: flex;
+  margin: auto;
+  justify-self: center;
+}
+
+.successMessageContainer {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  width: 8rem;
+  justify-content: center;
+  padding: 0.6rem;
+  border-radius: 20px;
+  border: 0;
+  background-color: var(--accent-color);
+  color: var(--off-white);
+  font-size: 20px;
+  font-family: "Publish Gothic", sans-serif;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+.buttoncontainer {
+  padding-top: 3%;
+  align-items: end;
+}
+.button:hover {
+  opacity: 0.9;
+}
+
+.phonePrefix {
+  width: 4rem;
+}
+
+.bookingsContainer {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.star {
+  font-weight: 500;
+  color: var(--accent-color);
+  font-size: 26px;
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    flex-direction: column;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    width: 85vw;
+    margin: auto;
+  }
+
+  .button {
+    align-self: center;
+  }
+}
