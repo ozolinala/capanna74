@@ -2,7 +2,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  /* gap: 15px; */
 }
 
 .contactInfo {
@@ -13,18 +13,19 @@
 
 .contactInfoText {
   padding: 4rem;
+  margin-top: 6%;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
   
 }
 
 .contactInfoText h4 {
   padding: 0;
   margin: 0;
+  margin-bottom: 3%;
   color: var(--off-white);
 }
-
 .contactInfoText h2,
 .contactInfoText p,
 .contactInfoText a {
@@ -32,7 +33,7 @@
 }
 .contactInfoText a {
   font-size: 20px;
-  margin: 10px 0px;
+  margin: 3px 0px;
 }
 
 .contactsImage {
