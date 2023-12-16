@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
     { id: 1, label: "Menu", link: "/#menu" },
     { id: 2, label: "Bookings", link: "/bookings" },
     { id: 3, label: "Takeaway", link: "/takeaway" },
-    { id: 4, label: "About us", link: "/about-us" },
+    { id: 4, label: "Our Story", link: "/our-story" },
     { id: 5, label: "Contact", link: "/contact" },
   ];
 
