@@ -51,7 +51,7 @@ const TakeawayItem = ({ item, onAddToCart }) => {
   return (
     <li>
       <span>
-        {item.name} - ${item.price}
+        {item.name} - DKK{item.price}
       </span>
       <button onClick={handleRemoveClick} disabled={quantity === 0}>
         -
