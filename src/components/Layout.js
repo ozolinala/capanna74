@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
           className={styles.menuIcon}
           onClick={() => setMenuActive(!menuActive)}
         >
-          ☰
+          <img src="/assets/menu.svg" alt="Menu icon" />
         </div>
         <div className={`${styles.navLinks} ${menuActive && styles.active}`}>
           {menuItems.map((item) => (
