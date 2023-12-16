@@ -21,7 +21,8 @@ html {
     url("/fonts/PublishGothicExpanded-Bold.woff2") format("woff2"),
     url("/fonts/PublishGothicExpanded-Bold.woff") format("woff"),
     url("/fonts/PublishGothicExpanded-Demibold.woff2") format("woff2"),
-    url("/fonts/PublishGothicExpanded-Demibold.woff") format("woff");
+    url("/fonts/PublishGothicExpanded-Demibold.woff") format("woff"),
+    
 }
 
 @font-face {
