@@ -17,13 +17,17 @@ const TakeawayCart = ({ cartItems, orderProcess, setOrderProcess }) => {
         ))}
       </ul>
       <p>Total: DKK{calculateTotal()}</p>
-      <button
-        onClick={() => {
-          setOrderProcess(true);
-        }}
-      >
-        Order
-      </button>
+      {orderProcess ? (
+        <button>Order</button>
+      ) : (
+        <button
+          onClick={() => {
+            setOrderProcess(true);
+          }}
+        >
+          Next
+        </button>
+      )}
     </div>
   );
 };

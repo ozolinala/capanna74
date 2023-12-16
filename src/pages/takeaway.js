@@ -4,6 +4,7 @@ import menuData from "../data/menuData";
 import TakeawayMenu from "@/components/TakeawayMenu";
 import TakeawayList from "@/components/TakeawayList";
 import TakeawayCart from "@/components/TakeawayCart";
+import TakeawayInfo from "@/components/TakeawayInfo";
 import styles from "../styles/TakeawayMenu.module.css";
 
 const Takeaway = () => {
