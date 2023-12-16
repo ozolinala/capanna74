@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   gap: 10vw;
+  padding-bottom: 15%;
+  padding-top: 4%;
 }
 
 .formContainer label {
@@ -25,6 +27,7 @@
   border-radius: 6px;
   transition: all 0.2s;
   font-family: "Publish Gothic Regular", sans-serif;
+  margin-bottom: 2%;
 }
 
 .formContainer input:focus {
@@ -108,7 +111,10 @@
   transition: 0.1s ease;
   cursor: pointer;
 }
-
+.buttoncontainer{
+  padding-top: 3%;
+  align-items: end;
+}
 .button:hover {
   opacity: 0.9;
 }
