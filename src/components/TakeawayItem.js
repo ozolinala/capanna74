@@ -23,15 +23,21 @@ const TakeawayItem = ({ item, onAddToCart }) => {
   };
 
   return (
-    <li>
+    <li className={styles.listItem}>
       <span>
-        {item.name} : {item.description} - DKK{item.price}
+        <h3>{item.name}</h3>
+        <p>{item.description}</p>
       </span>
-      <button onClick={handleRemoveClick} disabled={quantity === 0}>
-        -
-      </button>
-      <span>{quantity}</span>
-      <button onClick={handleAddClick}>+</button>
+      <span className={styles.priceAndQuantity}>
+        <h5>DKK {item.price}</h5>
+        <div className={styles.quantity}>
+          <button onClick={handleRemoveClick} disabled={quantity === 0}>
+            -
+          </button>
+          <span>{quantity}</span>
+          <button onClick={handleAddClick}>+</button>
+        </div>
+      </span>
     </li>
   );
 };

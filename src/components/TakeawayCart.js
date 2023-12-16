@@ -11,14 +11,19 @@ const TakeawayCart = ({ cartItems }) => {
   return (
     <div className={styles.cartContainer}>
       <h2>Your Order</h2>
-      <ul>
+      <ul className={styles.cartList}>
         {cartItems.map((item) => (
-          <li key={item.id}>
-            {item.name} - DKK{item.price} x {item.quantity}
+          <li className={styles.cartListItem} key={item.id}>
+            <div>
+              {item.name} x {item.quantity}
+            </div>
+            <div>DKK{item.price}</div>
           </li>
         ))}
       </ul>
-      <p>Total: DKK{calculateTotal()}</p>
+      <p className={styles.total}>
+        Total: DKK <b>{calculateTotal()}</b>
+      </p>
     </div>
   );
 };
