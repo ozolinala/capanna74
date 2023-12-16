@@ -3,14 +3,11 @@ import styles from "../styles/TakeawayMenu.module.css";
 
 const TakeawayCart = ({ cartItems, orderProcess, setOrderProcess }) => {
   const calculateTotal = () => {
-    return cartItems
-      .reduce((total, item) => total + item.price * item.quantity, 0)
-      .toFixed(2);
+    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
   };
 
   return (
     <div className={styles.cartContainer}>
-      
       <h2>Your Order</h2>
       <ul className={styles.cartList}>
         {cartItems.map((item) => (
@@ -26,7 +23,7 @@ const TakeawayCart = ({ cartItems, orderProcess, setOrderProcess }) => {
         Total: <b>DKK {calculateTotal()}</b>
       </p>
       {orderProcess ? (
-        <button className={styles.orderButton}>Order</button>
+        <p></p>
       ) : (
         <button
           className={styles.orderButton}

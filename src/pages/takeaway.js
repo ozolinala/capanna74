@@ -11,10 +11,9 @@ const Takeaway = () => {
   const [selectedCategory, setSelectedCategory] = useState(1);
   const [cartItems, setCartItems] = useState([]);
   const [orderProcess, setOrderProcess] = useState(false);
+  const [orderComplete, setOrderComplete] = useState(false);
 
-  const currentCategory = menuData.categories.find(
-    (category) => category.id === selectedCategory
-  );
+  const currentCategory = menuData.categories.find((category) => category.id === selectedCategory);
 
   const handleSelectCategory = (categoryId) => {
     setSelectedCategory(categoryId);
@@ -23,9 +22,7 @@ const Takeaway = () => {
   const handleAddToCart = (item) => {
     setCartItems((prevCartItems) => {
       // Check if the item is already in the cart
-      const existingItemIndex = prevCartItems.findIndex(
-        (cartItem) => cartItem.id === item.id
-      );
+      const existingItemIndex = prevCartItems.findIndex((cartItem) => cartItem.id === item.id);
 
       // If the item is already in the cart, update its quantity
       if (existingItemIndex !== -1) {
@@ -43,7 +40,7 @@ const Takeaway = () => {
     <Layout>
       <div className={styles.takeawayContainer}>
         <div>
-          {orderProcess ? (
+          {orderProcess && !orderComplete ? (
             <button
               className={styles.goBackButton}
               onClick={() => {
@@ -55,17 +52,9 @@ const Takeaway = () => {
           ) : (
             <p></p>
           )}
-          {/* <div className={styles.takeawayLeft}>
-            <TakeawayMenu
-              categories={menuData.categories}
-              onSelectCategory={handleSelectCategory}
-              selectedCategory={selectedCategory}
-            />
-            <TakeawayList items={currentCategory.items} onAddToCart={handleAddToCart} />
-          </div> */}
           <div className={styles.takeawayLeft}>
             {orderProcess ? (
-              <TakeawayInfo />
+              <TakeawayInfo orderComplete={orderComplete} setOrderComplete={setOrderComplete} />
             ) : (
               <>
                 <h2>Menu</h2>
@@ -74,10 +63,7 @@ const Takeaway = () => {
                   onSelectCategory={handleSelectCategory}
                   selectedCategory={selectedCategory}
                 />
-                <TakeawayList
-                  items={currentCategory.items}
-                  onAddToCart={handleAddToCart}
-                />
+                <TakeawayList items={currentCategory.items} onAddToCart={handleAddToCart} />
               </>
             )}
           </div>

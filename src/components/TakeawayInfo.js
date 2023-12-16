@@ -3,9 +3,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const TakeawayInfo = () => {
-  const [loading, setLoading] = useState(false);
+const TakeawayInfo = ({ orderComplete, setOrderComplete }) => {
   const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
 
   const handleSubmit = async (event) => {
@@ -16,6 +16,7 @@ const TakeawayInfo = () => {
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
       setSuccess(true);
+      setOrderComplete(true);
       console.log("Success:", event.target.elements);
     } catch (error) {
       console.error("Error:", error);
@@ -39,7 +40,6 @@ const TakeawayInfo = () => {
           </div>
         ) : (
           <div>
-            <h2>Book a table</h2>
             <form onSubmit={handleSubmit} autoComplete="off" className={styles.formContainer}>
               <div className={styles.leftColumn}>
                 <div>
@@ -73,7 +73,7 @@ const TakeawayInfo = () => {
                   >
                     Last name <span className={styles.star}>*</span>
                   </label>
-                  <input type="text" id="last-name" requ2pxired />
+                  <input type="text" id="last-name" required />
                 </div>
 
                 <div>
@@ -90,7 +90,7 @@ const TakeawayInfo = () => {
                   >
                     E-mail
                   </label>
-                  <input type="email" id="email" required />
+                  <input type="email" id="email" />
                 </div>
 
                 <div>
@@ -113,6 +113,7 @@ const TakeawayInfo = () => {
                     id="phone-number"
                     name="phone-number"
                     placeholder="+45 00 00 00 00"
+                    required
                   />
                 </div>
               </div>
@@ -137,7 +138,7 @@ const TakeawayInfo = () => {
 
                 <div className={styles.buttoncontainer}>
                   <button className={styles.button} type="submit">
-                    Submit
+                    Order
                   </button>
                 </div>
               </div>
