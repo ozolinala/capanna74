@@ -47,6 +47,45 @@
   color: #fff; /* Set your desired text color */
   animation: spin 8s linear infinite; /* Adjust the animation duration and timing function as needed */
 }
+/* scroll icon */
+.scrollIndicator {
+  position: absolute;
+  bottom: 50px;
+  left: 90%;
+  background-color: var(--off-white);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scrollContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scrollText {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+.downArrow {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  animation: jumpAnimation 1.8s infinite; /* Adjust the duration as needed */
+
+}
+@keyframes jumpAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
 
 @keyframes spin {
   from {
