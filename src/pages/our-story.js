@@ -8,7 +8,7 @@ const OurStory = () => {
     <Layout currentPage="yourComponent">
       <OurStoryGrid></OurStoryGrid>
       <div className={styles.others}>
-        <h2 classNamestyle={{ color: "var(--accent-color)" }}>
+        <h2 >
           All about family
         </h2>
         <p>
