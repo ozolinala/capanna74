@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
     { id: 1, label: "Menu", link: "/#menu" },
     { id: 2, label: "Bookings", link: "/bookings" },
     { id: 3, label: "Takeaway", link: "/takeaway" },
-    { id: 4, label: "Our Story", link: "/our-story#menu" },
+    { id: 4, label: "About us", link: "/about-us" },
     { id: 5, label: "Contact", link: "/contact" },
   ];
 
@@ -34,8 +34,7 @@ const Layout = ({ children }) => {
                 <p
                   className={`${styles.navLinkText} ${
                     currentPageNormalized ===
-                      item.label.toLowerCase().replace(/\s+/g, "-") ||
-                    (currentPage.includes("#menu") && item.label === "Menu")
+                    item.label.toLowerCase().replace(/\s+/g, "-",)
                       ? styles.active
                       : ""
                   }`}
