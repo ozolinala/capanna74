@@ -3,7 +3,7 @@ import styles from "../styles/TakeawayMenu.module.css";
 
 const TakeawayMenu = ({ categories, onSelectCategory, selectedCategory }) => {
   return (
-    <nav>
+    <nav className={styles.menuNavbar}>
       {categories.map((category) => (
         <button
           key={category.id}
