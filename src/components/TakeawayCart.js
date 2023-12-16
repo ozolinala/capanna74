@@ -1,11 +1,9 @@
 import React from "react";
 import styles from "../styles/TakeawayMenu.module.css";
 
-const TakeawayCart = ({ cartItems }) => {
+const TakeawayCart = ({ cartItems, orderProcess, setOrderProcess }) => {
   const calculateTotal = () => {
-    return cartItems
-      .reduce((total, item) => total + item.price * item.quantity, 0)
-      .toFixed(2);
+    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
   };
 
   return (
@@ -19,6 +17,13 @@ const TakeawayCart = ({ cartItems }) => {
         ))}
       </ul>
       <p>Total: DKK{calculateTotal()}</p>
+      <button
+        onClick={() => {
+          setOrderProcess(true);
+        }}
+      >
+        Order
+      </button>
     </div>
   );
 };
