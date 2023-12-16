@@ -24,8 +24,10 @@ const TakeawayItem = ({ item, onAddToCart }) => {
 
   return (
     <li className={styles.listItem}>
-      <span>
-        <h3>{item.name}</h3>
+      <span className={styles.nameAndDescription}>
+        <h3>
+          <b>{item.name}</b>
+        </h3>
         <p>{item.description}</p>
       </span>
       <span className={styles.priceAndQuantity}>

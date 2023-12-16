@@ -28,11 +28,11 @@
 
 .selected::before {
   content: "";
-  background-color: black;
+  background-color: var(--grey);
   display: inline-block;
   width: 6px;
   height: 6px;
-  border: 1px solid #000;
+  border: 1px solid var(--grey);
   border-radius: 50%;
   margin-right: 0.5em;
   vertical-align: middle;
@@ -42,11 +42,13 @@
   display: flex;
   justify-content: space-between;
   padding-left: 4rem;
+  padding-bottom: 10rem;
 }
 
 .menuNavbar {
   display: flex;
   gap: 3rem;
+  color: var(--grey);
 }
 
 .takeawayLeft {
@@ -64,7 +66,8 @@
   color: var(--off-white);
   position: fixed;
   right: 0;
-  top: 10rem;
+  top: 6rem;
+  gap: 1rem;
 }
 
 .cartContainer ul {
@@ -91,13 +94,23 @@
 }
 
 .listItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   list-style: none;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  border-top: 0.5px solid var(--grey);
+}
+
+.noTopBorder {
+  border-top: none;
 }
 
 .listItem span h3 {
   padding-left: 0;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 .listItem span h5 {
@@ -110,6 +123,7 @@
   display: flex;
   gap: 2rem;
   align-items: center;
+  color: var(--grey);
 }
 
 .quantity {
@@ -162,4 +176,9 @@
   text-decoration: underline;
   text-underline-offset: 4px;
   padding: 1rem;
+}
+
+.nmaeAndDescription {
+  display: flex;
+  flex-direction: column;
 }
