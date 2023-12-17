@@ -23,10 +23,7 @@ const Layout = ({ children }) => {
   const pageWithoutFooter = "takeaway";
 
   // Check if it's the specified page and if the screen width is less than a certain value
-  const shouldHideFooter =
-    currentPage === pageWithoutFooter &&
-    typeof window !== "undefined" &&
-    window.innerWidth <= 768;
+  const shouldHideFooter = currentPage === pageWithoutFooter;
 
   return (
     <div className={styles.container}>
