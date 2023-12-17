@@ -49,6 +49,7 @@ const Layout = ({ children }) => {
         </div>
       </nav>
       <main>{children}</main>
+      {currentPageNormalized !== "takeaway" && (
       <footer className={styles.footer}>
         <div className={styles.leftContainer}>
           <div className={styles.logoContainer}>
@@ -108,6 +109,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </footer>
+       )}
     </div>
   );
 };
