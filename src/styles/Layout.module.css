@@ -128,7 +128,7 @@
 
 .footer {
   display: flex;
-  background-color: var(--light-grey);
+  background-color: var(--beige);
   color: white;
   padding: 3%;
   justify-content: space-between;
