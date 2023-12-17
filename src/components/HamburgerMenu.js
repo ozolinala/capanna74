@@ -9,12 +9,12 @@ import styles from "../styles/HamburgerMenu.module.css";
 <div className={`${styles.menu} ${isOpen ? styles.active : ''}`}>
  <button className={`${styles.button} ${isOpen ? styles.active : ''}`} onClick={() => setIsOpen(!isOpen)}>
    <span className={styles.line}></span>
-   <span className={styles.line}></span>
+   {/* <span className={styles.line}></span> */}
    <span className={styles.line}></span>
    <span className={styles.buttonText}>Menu</span>
  </button>
          {isOpen && (
-           <div>
+           <div className={styles.links}>
              {menuItems.map((item) => (
                <Link key={item.id} href={item.link}>
                 <p>{item.label}</p>
