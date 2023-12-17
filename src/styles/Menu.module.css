@@ -59,10 +59,15 @@
 
 @media only screen and (max-width: 768px) {
   .menuItems {
-    width: 95vw;
+    width: 85%;
     margin: auto;
   }
   .menuItems h5 {
     font-size: 18px;
+  }
+
+  .menuItemsContainer {
+    width: 85%;
+    margin: auto;
   }
 }
