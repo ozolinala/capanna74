@@ -172,11 +172,11 @@
     width: 80vw;
   }
   .footer {
-    flex-direction: column;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding: 15% 0 15% 5%;
   }
-
+  .logoContainer {
+    margin-bottom: 3%;
+  }
   .leftContainer,
   .rightContainer {
     width: 100%;
