@@ -5,15 +5,20 @@ import Menu from "../components/Menu";
 import styles from "../styles/LandingPage.module.css";
 
 const images = [
-  "/assets/contacts-image.jpg",
+  "/assets/wine.jpg",
+  "/assets/panna-cotta.jpg",
   "/assets/Homepage-Picture1.png",
+  "/assets/contacts-image.jpg",
   "/assets/our-story1.png",
   "/assets/our-story2.png",
-  "/assets/our-story3.png",
+  "/assets/our-story5.png",
   "/assets/Homepage-Picture2.png",
+  "/assets/spaghettopomodoro.jpg",
   "/assets/Homepage-Picture3.png",
   "/assets/our-story4.png",
-  "/assets/our-story5.png",
+
+  "/assets/veggies.jpg",
+  "/assets/fusillo.jpg",
 ];
 
 const HomePage = () => {

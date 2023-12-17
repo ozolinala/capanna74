@@ -41,12 +41,16 @@ const ImageCarousel = ({ images }) => {
           />
         </div>
       </Link>
-      <div className={styles.scrollIndicator}>
+      <Link href={"/#menu"} className={styles.scrollIndicator}>
         <div className={styles.scrollContainer}>
-          <img src="/assets/grey-arrow.svg" alt="Scroll down" className={styles.downArrow} />
+          <img
+            src="/assets/grey-arrow.svg"
+            alt="Scroll down"
+            className={styles.downArrow}
+          />
           <span className={styles.scrollText}>Scroll</span>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
