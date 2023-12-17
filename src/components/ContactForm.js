@@ -105,7 +105,22 @@ const ContactForm = () => {
     </label>
     <input type="email" id="email" />
   </div>
-
+  <div className={styles.inputContainer}>
+    <label
+      style={{
+        position: "absolute",
+        transform: "translateX(15px)",
+        backgroundColor: "#fff",
+        lineHeight: "1px",
+        paddingLeft: "10px",
+        paddingRight: "8px",
+      }}
+      htmlFor="email"
+    >
+      Mobile<span className={styles.star}>*</span>
+    </label>
+    <input type="email" id="email" />
+  </div>
   <div className={styles.inputContainer}>
     <label
       style={{

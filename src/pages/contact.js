@@ -7,6 +7,9 @@ import ContactForm from "@/components/ContactForm";
 const Contact = () => {
   return (
     <Layout>
+       <div className={styles.imageContainer}>
+       <img src="/assets/contact-page-pasta.jpg" alt="Logo"></img>
+          </div>
       <article className={styles.container}>
         <div className={styles.contactInfo}>
           <div className={styles.contactInfoText}>
@@ -26,23 +29,24 @@ const Contact = () => {
               <p>+45 35 00 00 90</p>
             </div>
             <div>
-              <h4>Other restaurants</h4>
+            <MapContainer location={{ lat: 55.6737299, lng: 12.5557752 }} />
+              {/* <h4>Other restaurants</h4>
               <div className={styles.otherRestaurants}>
                 <a href="https://mangia.dk/">Mangia</a>
-                <a href="https://www.ristorantecircolo.dk/">Circolo</a>
-              </div>
+                <a href="https://www.ristorantecircolo.dk/">Circolo</a> */}
+              {/* </div> */}
             </div>
           </div>
         </div>
-        <div>
+        <div className={styles.formContainer}>
         {/* <div>
               <h4>Contacts</h4>
               <p>Gammel Kongevej 74, Frederiksberg</p>
               <a href="mailto:info@capannadi74.dk">info@capanna74.dk</a>
               <p>+45 35 00 00 90</p>
             </div> */}
-             <MapContainer location={{ lat: 55.6737299, lng: 12.5557752 }} />
-          {/* <ContactForm></ContactForm> */}
+               <h4>Reach out to us</h4>
+          <ContactForm></ContactForm>
         </div>
       </article>
     </Layout>

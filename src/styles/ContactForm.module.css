@@ -5,7 +5,6 @@
     justify-content: center;
     padding-bottom: 15%;
     padding-top: 10%;
-    margin-left: 15%;
     margin-right: 17%;
   }
   .heading{
@@ -71,7 +70,6 @@
   }
   .buttoncontainer{
     padding-top: 10%;
-    align-items: end;
   }
   .button:hover {
     opacity: 0.9;
@@ -141,3 +139,9 @@
     color: var(--accent-color);
     font-size: 26px;
   } 
+  
+  @media only screen and (max-width: 768px) {
+    .nameContainer {
+      justify-content: space-between;
+     }
+  }
