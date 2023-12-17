@@ -204,6 +204,7 @@
 @media only screen and (max-width: 768px) {
   .takeawayContainer {
     padding-left: 0;
+    padding-bottom: 70%;
     width: 90vw;
     margin: auto;
     padding-bottom: 30vh;

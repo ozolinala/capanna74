@@ -1,33 +1,38 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-top: 5%;
+  padding-right: 7%;
+  padding-left: 2%;
   /* gap: 15px; */
 }
 
 .contactInfo {
-  background-color: var(--accent-color);
+  background-color: white;
   width: 100%;
   height: 100%;
 }
 
 .contactInfoText {
-  padding: 4rem;
-  margin-top: 6%;
+  padding-left: 7%;
+  /* margin-top: 6%; */
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
-
-.contactInfoText h4 {
+.formContainer{
+  padding-left: 14%;
+}
+.container h4 {
   padding: 0;
   margin: 0;
   margin-bottom: 3%;
-  color: var(--off-white);
+  color: var(--dark-grey);
 }
 .contactInfoText h2,
 .contactInfoText p,
 .contactInfoText a {
-  color: var(--off-white);
+  color: var(--grey);
 }
 .contactInfoText a {
   font-size: 20px;
@@ -38,17 +43,28 @@
   width: 100%;
   max-height: 100%;
 }
-
+/* 
 .otherRestaurants {
   display: flex;
   flex-direction: column;
+} */
+.imageContainer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
 }
 
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media only screen and (max-width: 768px) {
-  /* .contactsImage {
-    display: none;
-  } */
-
+  .formContainer{
+    padding-left: 7%;
+  }
   .container {
     grid-template-columns: 1fr;
   }
@@ -58,8 +74,8 @@
   }
   .contactInfoText {
     padding-left: 7%;
-    padding-bottom: 30%;
-    margin-top: 20%;
+    padding-bottom: 15%;
+    margin-top: 7%;
     gap: 4rem;
   }
 }

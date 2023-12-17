@@ -1,0 +1,147 @@
+.formContainer {
+    /* width: vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15%;
+    padding-top: 10%;
+    margin-right: 17%;
+  }
+  .heading{
+    padding-top: 10%;
+  }
+  .formContainer label {
+    font-size: 14px;
+    position: "absolute";
+    transform: "translateY(5px)";
+    background: "#fff";
+    padding: "0 5px";
+  }
+  
+  .formContainer input {
+    box-sizing: border-box;
+    margin: 0;
+    /* width: 14rem; */
+    padding: 4px 11px;
+    color: var(--black);
+    line-height: 2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-radius: 6px;
+    transition: all 0.2s;
+    font-family: "Publish Gothic Regular", sans-serif;
+    margin-bottom: 10%;
+  }
+  .leftcolumn{
+    flex-direction: row;
+    display: inline-block;
+  }
+  .nameContainer {
+    display: flex;
+    gap:0.5rem;
+    /* justify-content: space-between; */
+   }
+   
+   .inputContainer {
+    display: flex;
+    justify-content: space-between;
+   }
+   
+   .nameContainer input,
+   .inputContainer input,
+   .inputContainer textarea {
+    flex: 1;
+   }
+   
+.button {
+    display: flex;
+    width: 8rem;
+    justify-content: center;
+    padding: 0.6rem;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--accent-color);
+    color: var(--off-white);
+    font-size: 20px;
+    font-family: "Publish Gothic", sans-serif;
+    transition: 0.1s ease;
+    cursor: pointer;
+  }
+  .buttoncontainer{
+    padding-top: 10%;
+  }
+  .button:hover {
+    opacity: 0.9;
+  }
+  .formContainer input:focus {
+    outline: none;
+  }
+  
+  .formContainer textarea:focus {
+    outline: none;
+  }
+  .formContainer textarea {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 4px 11px;
+    color: var(--black);
+    line-height: 1.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-radius: 6px;
+    transition: all 0.2s;
+    font-family: "Publish Gothic Regular", sans-serif;
+  }
+  .successMessage {
+    display: block;
+    text-align: center;
+  }
+  .backToMenu {
+    display: block;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 1px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .check {
+    display: flex;
+    margin: auto;
+    justify-self: center;
+  }
+  
+  .successMessageContainer {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
+  } 
+  .phonePrefix {
+    width: 4rem;
+  }
+  .bookingsContainer {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .star {
+    font-weight: 500;
+    color: var(--accent-color);
+    font-size: 26px;
+  } 
+  
+  @media only screen and (max-width: 768px) {
+    .nameContainer {
+      justify-content: space-between;
+     }
+  }

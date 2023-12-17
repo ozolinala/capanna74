@@ -54,12 +54,12 @@ const Layout = ({ children }) => {
         </div>
       </nav>
       <main>{children}</main>
-      {!shouldHideFooter && (
-        <footer className={styles.footer}>
-          <div className={styles.leftContainer}>
-            <div className={styles.logoContainer}>
-              <img src="/assets/capanna-grey.svg" alt="Logo" />
-            </div>
+      {currentPageNormalized !== "takeaway" && (
+      <footer className={styles.footer}>
+        <div className={styles.leftContainer}>
+          <div className={styles.logoContainer}>
+            <img src="/assets/capanna-grey.svg" alt="Logo" />
+          </div>
 
             <div className={styles.addressContainer}>
               <p>Gammel Kongevej 74, København K</p>
@@ -113,8 +113,9 @@ const Layout = ({ children }) => {
               </a>
             </div>
           </div>
-        </footer>
-      )}
+        </div>
+      </footer>
+       )}
     </div>
   );
 };

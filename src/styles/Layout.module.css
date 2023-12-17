@@ -131,6 +131,7 @@
   background-color: var(--beige);
   color: white;
   padding: 3%;
+  margin-top: 15%;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -173,6 +174,7 @@
   }
   .footer {
     padding: 15% 0 15% 5%;
+    margin-top: 25%;
   }
   .logoContainer {
     margin-bottom: 3%;
