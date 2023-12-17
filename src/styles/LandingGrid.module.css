@@ -131,7 +131,7 @@
     padding: 1rem;
   }
   .scrollIndicator {
-    bottom: 4rem;
+    bottom: 6rem;
     left: 10%;
   }
 
@@ -141,5 +141,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80vw;
+  }
+
+  .stampContainer {
+    position: absolute;
+    top: 40%;
+    left: 85%;
   }
 }

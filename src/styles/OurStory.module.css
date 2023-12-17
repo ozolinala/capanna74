@@ -94,7 +94,7 @@
   }
   .item p,
   .item img {
-    padding-bottom: 40%;
+    padding-bottom: 20%;
   }
   #logo img {
     padding-left: 20%;
@@ -112,7 +112,7 @@
     font-size: 20px;
   }
   .others {
-    padding-top: 10%;
-    padding-bottom: 45%;
+    padding-top: 40%;
+    padding-bottom: 95%;
   }
 }

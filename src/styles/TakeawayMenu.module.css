@@ -41,13 +41,19 @@
 .takeawayContainer {
   width: 50vw;
   padding-left: 4rem;
-  padding-bottom: 10rem;
+  padding-bottom: 2rem;
 }
 
 .menuNavbar {
   display: flex;
   gap: 3rem;
   color: var(--grey);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .takeawayLeft {
@@ -190,16 +196,23 @@
   flex-direction: column;
 }
 
+.showMoreButton {
+  border: 0;
+  background-color: var(--accent-color);
+}
+
 @media only screen and (max-width: 768px) {
   .takeawayContainer {
     padding-left: 0;
     padding-bottom: 70%;
     width: 90vw;
     margin: auto;
+    padding-bottom: 30vh;
   }
 
   .menuNavbar {
     gap: 1rem;
+    padding-top: 6rem;
   }
 
   .category {
@@ -227,6 +240,6 @@
   }
 
   .takeawayLeft h2 {
-    margin: 0;
+    margin-top: 3rem;
   }
 }
