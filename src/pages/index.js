@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/Layout";
 import ImageCarousel from "../components/ImageCarousel";
 import Menu from "../components/Menu";
-import styles from "../styles/LandingPage.module.css";
 
 const images = [
   "/assets/wine.jpg",
@@ -24,7 +23,7 @@ const images = [
 const HomePage = () => {
   return (
     <Layout>
-      <div className={styles.backgroundColor}>
+      <div>
         <ImageCarousel images={images} />
         <div id="menu">
           <Menu />

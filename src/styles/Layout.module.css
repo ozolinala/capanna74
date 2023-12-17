@@ -96,7 +96,9 @@
     display: block;
     margin-left: auto;
   }
-
+.nav{
+  height:1.5rem;
+}
   .navLinks {
     display: none;
   }
@@ -126,7 +128,7 @@
 
 .footer {
   display: flex;
-  background-color: var(--light-grey);
+  background-color: var(--beige);
   color: white;
   padding: 3%;
   justify-content: space-between;
