@@ -57,7 +57,6 @@ const Takeaway = () => {
               <TakeawayInfo orderComplete={orderComplete} setOrderComplete={setOrderComplete} />
             ) : (
               <>
-                <h2>Menu</h2>
                 <TakeawayMenu
                   categories={menuData.categories}
                   onSelectCategory={handleSelectCategory}
