@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import styles from "../styles/Contact.module.css";
 import MapContainer from "@/components/MapContainer";
+import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
   return (
@@ -33,15 +34,17 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <MapContainer location={{ lat: 55.6737299, lng: 12.5557752 }} />
-
-        {/* <img
-          src="/assets/contacts-image.jpg"
-          alt="Landing Image"
-          className={styles.contactsImage}
-        /> */}
+        <div>
+        {/* <div>
+              <h4>Contacts</h4>
+              <p>Gammel Kongevej 74, Frederiksberg</p>
+              <a href="mailto:info@capannadi74.dk">info@capanna74.dk</a>
+              <p>+45 35 00 00 90</p>
+            </div> */}
+             <MapContainer location={{ lat: 55.6737299, lng: 12.5557752 }} />
+          {/* <ContactForm></ContactForm> */}
+        </div>
       </article>
-      {/* <MapContainer location={{ lat: 55.6737299, lng: 12.5557752 }} /> */}
     </Layout>
   );
 };
