@@ -10,19 +10,37 @@ html {
 }
 
 @font-face {
+  font-family: "Publish Gothic Light";
+  src:
+    url("/fonts/PublishGothicExpanded-Light.woff") format("woff"),
+    url("/fonts/PublishGothicExpanded-Light.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "Publish Gothic";
   src:
-    url("/fonts/PublishGothicExpanded-Extralight.woff") format("woff"),
-    url("/fonts/PublishGothicExpanded-Extralight.woff2") format("woff2"),
-    url("/fonts/PublishGothicExpanded-Light.woff") format("woff"),
-    url("/fonts/PublishGothicExpanded-Light.woff2") format("woff2"),
     url("/fonts/PublishGothicExpanded-Regular.woff") format("woff"),
-    url("/fonts/PublishGothicExpanded-Regular.woff2") format("woff2"),
+    url("/fonts/PublishGothicExpanded-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Publish Gothic Bold";
+  src:
     url("/fonts/PublishGothicExpanded-Bold.woff2") format("woff2"),
-    url("/fonts/PublishGothicExpanded-Bold.woff") format("woff"),
+    url("/fonts/PublishGothicExpanded-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Publish Gothic Extralight";
+  src: url("/fonts/PublishGothicExpanded-Extralight.woff") format("woff")
+    url("/fonts/PublishGothicExpanded-Extralight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Publish Gothic Demibold";
+  src:
     url("/fonts/PublishGothicExpanded-Demibold.woff2") format("woff2"),
-    url("/fonts/PublishGothicExpanded-Demibold.woff") format("woff"),
-    
+    url("/fonts/PublishGothicExpanded-Demibold.woff") format("woff");
 }
 
 @font-face {
@@ -33,7 +51,7 @@ html {
 }
 
 body {
-  font-family: "Publish Gothic", sans-serif;
+  font-family: "Publish Gothic Light", sans-serif;
   margin: 0;
   padding: 0;
   letter-spacing: 0.08rem;
@@ -54,7 +72,7 @@ h2 {
 }
 h3 {
   padding-left: 3%;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 500;
   color: var(--grey);
 }
@@ -62,6 +80,11 @@ h4 {
   font-size: 32px;
   font-weight: 500;
   color: var(--accent-color);
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 p {

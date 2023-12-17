@@ -9,7 +9,6 @@
   padding-bottom: 3rem;
   padding-left: 0;
   font-family: "Publish Gothic Demibold", "Publish Gothic", sans-serif;
-
 }
 
 .menuItemsContainer {
@@ -35,20 +34,17 @@
   width: 8rem;
   padding-left: 0;
   font-weight: bold;
-  
-  
 }
 
 .menuItems h5 {
   font-size: 20px;
   margin: 2px;
   color: var(--grey);
-  font-family: "Publish Gothic Demibold", "Publish Gothic", sans-serif;
+  font-family: "Publish Gothic", sans-serif;
 }
 
-
 .menuItems p {
-  font-family: "Publish Gothic Light", "Publish Gothic", sans-serif;
+  font-family: "Publish Gothic Light", sans-serif;
   color: var(--grey) !important;
   margin: 0.5vh;
 }
@@ -59,4 +55,14 @@
   z-index: -10;
   left: 1rem;
   bottom: 6vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .menuItems {
+    width: 95vw;
+    margin: auto;
+  }
+  .menuItems h5 {
+    font-size: 18px;
+  }
 }

@@ -36,7 +36,11 @@ const TakeawayInfo = ({ orderComplete, setOrderComplete }) => {
                 <br />
                 Your food will be ready in 20 minutes.
               </p>
-              <img src="/assets/check.svg" alt="Checkmark" className={styles.check} />
+              <img
+                src="/assets/check.svg"
+                alt="Checkmark"
+                className={styles.check}
+              />
               <Link className={styles.backToMenu} href="/">
                 Go back to menu
               </Link>
@@ -44,7 +48,11 @@ const TakeawayInfo = ({ orderComplete, setOrderComplete }) => {
           </div>
         ) : (
           <div>
-            <form onSubmit={handleSubmit} autoComplete="off" className={styles.formContainer}>
+            <form
+              onSubmit={handleSubmit}
+              autoComplete="off"
+              className={styles.formContainer}
+            >
               <div className={styles.leftColumn}>
                 <div>
                   <label
@@ -120,9 +128,6 @@ const TakeawayInfo = ({ orderComplete, setOrderComplete }) => {
                     required
                   />
                 </div>
-              </div>
-
-              <div className={styles.rightColumn}>
                 <div>
                   <label
                     style={{

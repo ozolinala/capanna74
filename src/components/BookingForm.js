@@ -83,7 +83,7 @@ const BookingForm = () => {
                   >
                     Last name <span className={styles.star}>*</span>
                   </label>
-                  <input type="text" id="last-name" requ2pxired />
+                  <input type="text" id="last-name" required />
                 </div>
 
                 <div>
@@ -100,7 +100,7 @@ const BookingForm = () => {
                   >
                     E-mail
                   </label>
-                  <input type="email" id="email" required />
+                  <input type="email" id="email" />
                 </div>
 
                 <div>
@@ -123,6 +123,7 @@ const BookingForm = () => {
                     id="phone-number"
                     name="phone-number"
                     placeholder="+45 00 00 00 00"
+                    required
                   />
                 </div>
               </div>
@@ -163,6 +164,7 @@ const BookingForm = () => {
                     type="date"
                     id="date"
                     onChange={(e) => console.log(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -180,10 +182,10 @@ const BookingForm = () => {
                   >
                     Select a time <span className={styles.star}>*</span>
                   </label>
-                  <input type="time" id="time" />
+                  <input type="time" id="time" required />
                 </div>
 
-                <div className={styles.buttoncontainer} >
+                <div className={styles.buttoncontainer}>
                   <button className={styles.button} type="submit">
                     Submit
                   </button>

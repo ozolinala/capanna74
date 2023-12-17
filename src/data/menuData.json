@@ -24,7 +24,7 @@
         },
         {
           "id": 104,
-          "name": "Olives Miste",
+          "name": "Olive Miste",
           "description": "Mixed marinated olives.",
           "price": 50
         },
@@ -88,7 +88,12 @@
           "description": "Creamy Italian dessert with heavy cream and vanilla extract.",
           "price": 75
         },
-        { "id": 304, "name": "Amaretti", "description": "Almond cookies.", "price": 40 }
+        {
+          "id": 304,
+          "name": "Amaretti",
+          "description": "Almond cookies.",
+          "price": 40
+        }
       ]
     },
     {

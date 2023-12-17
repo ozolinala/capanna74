@@ -31,7 +31,7 @@ const TakeawayItem = ({ item, onAddToCart }) => {
         <p>{item.description}</p>
       </span>
       <span className={styles.priceAndQuantity}>
-        <h5>DKK {item.price}</h5>
+        <h5> {item.price}kr.</h5>
         <div className={styles.quantity}>
           <button onClick={handleRemoveClick} disabled={quantity === 0}>
             -

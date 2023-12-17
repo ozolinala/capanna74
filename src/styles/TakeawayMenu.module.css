@@ -39,8 +39,7 @@
 }
 
 .takeawayContainer {
-  display: flex;
-  justify-content: space-between;
+  width: 50vw;
   padding-left: 4rem;
   padding-bottom: 10rem;
 }
@@ -57,17 +56,21 @@
   gap: 1rem;
 }
 
+.takeawayLeft h2 {
+  padding: 0;
+}
+
 .cartContainer {
   display: flex;
   flex-direction: column;
   background-color: var(--accent-color);
-  width: 16rem;
+  width: 18rem;
   padding: 1.8rem;
   color: var(--off-white);
   position: fixed;
   right: 0;
   top: 6rem;
-  gap: 1rem;
+  gap: 1vh;
 }
 
 .cartContainer ul {
@@ -80,6 +83,7 @@
   padding: 0;
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 30px;
 }
 
 .cartContainer p {
@@ -153,8 +157,10 @@
 }
 
 .total {
+  display: flex;
+  justify-content: space-between;
   border-top: 1px solid var(--off-white);
-  padding-top: 0.2rem;
+  padding-top: 0.4rem;
 }
 
 .orderButton {
@@ -164,6 +170,7 @@
   border-radius: 50px;
   color: var(--accent-color);
   font-weight: 600;
+  margin-top: 2rem;
 }
 
 .goBackButton {
@@ -178,7 +185,47 @@
   padding: 1rem;
 }
 
-.nmaeAndDescription {
+.nameAndDescription {
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .takeawayContainer {
+    padding-left: 0;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .menuNavbar {
+    gap: 1rem;
+  }
+
+  .category {
+    font-size: 18px;
+  }
+
+  .cartContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent-color);
+    width: auto;
+    height: auto;
+    justify-content: end;
+    padding: 1.8rem;
+    color: var(--off-white);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    gap: 1vh;
+  }
+
+  .cartContainer h2 {
+    display: none;
+  }
+
+  .takeawayLeft h2 {
+    margin: 0;
+  }
 }

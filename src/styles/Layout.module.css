@@ -87,7 +87,7 @@
 }
 
 .menuIcon img {
-  height:1.5rem;
+  height: 1.5rem;
   padding-right: 5%;
 }
 
@@ -167,12 +167,12 @@
 @media (max-width: 600px) {
   .logoContainer img {
     padding-bottom: 4%;
+    width: 80vw;
   }
   .footer {
     flex-direction: column;
     padding-top: 20%;
     padding-bottom: 20%;
-    margin-top: 25%;
   }
 
   .leftContainer,
