@@ -140,6 +140,8 @@
 @media (max-width: 768px) {
   .formContainer {
     flex-direction: column;
+    padding-bottom: 55%;
+    padding-top: 15%;
   }
 
   .leftColumn,

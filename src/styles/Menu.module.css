@@ -70,4 +70,7 @@
     width: 85%;
     margin: auto;
   }
+  .menuList {
+    padding-bottom: 55%;
+  }
 }
