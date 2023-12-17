@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import styles from "../styles/Contact.module.css";
+import MapContainer from "@/components/MapContainer";
 
 const Contact = () => {
   return (
@@ -32,12 +33,15 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <img
+        <MapContainer location={{ lat: 55.6737299, lng: 12.5557752 }} />
+
+        {/* <img
           src="/assets/contacts-image.jpg"
           alt="Landing Image"
           className={styles.contactsImage}
-        />
+        /> */}
       </article>
+      {/* <MapContainer location={{ lat: 55.6737299, lng: 12.5557752 }} /> */}
     </Layout>
   );
 };
