@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/Layout.module.css";
+import HamburgerMenu from "../components/HamburgerMenu";
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -21,12 +22,8 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.container}>
       <nav className={styles.nav}>
-        <div
-          className={styles.menuIcon}
-          onClick={() => setMenuActive(!menuActive)}
-        >
-          <img src="/assets/menu.svg" alt="Menu icon" />
-        </div>
+        <HamburgerMenu menuItems={menuItems} />
+         
         <div className={`${styles.navLinks} ${menuActive && styles.active}`}>
           {menuItems.map((item) => (
             <div key={item.id} className={styles.navLink}>
@@ -48,6 +45,7 @@ const Layout = ({ children }) => {
               </Link>
             </div>
           ))}
+          
         </div>
       </nav>
       <main>{children}</main>
