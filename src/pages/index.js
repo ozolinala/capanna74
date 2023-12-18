@@ -8,14 +8,9 @@ const images = [
   "/assets/panna-cotta.jpg",
   "/assets/dried-pasta.jpg",
   "/assets/pasta-carbonara.jpg",
-  "/assets/pasta-carbonara.png",
-  "/assets/our-story2.png",
-  "/assets/contact-pasta.png",
-  "/assets/Homepage-Picture2.png",
-  "/assets/spaghettopomodoro.jpg",
-  "/assets/Homepage-Picture3.png",
-  "/assets/our-story4.png",
-
+  "/assets/kitchen.jpg",
+  "/assets/kitchen2.jpg",
+  "/assets/laughing.jpg",
   "/assets/veggies.jpg",
   "/assets/fusillo.jpg",
 ];
