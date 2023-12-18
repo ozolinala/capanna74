@@ -8,7 +8,7 @@ const OurStoryGrid = ({}) => {
         <img src="/assets/our-story1.png" alt="Pasta in a pan"></img>
       </div>
       <div id={styles.logo} className={styles.item}>
-        <img src="/assets/Orange-capanna-logo.svg" alt="Logo"></img>
+        <img src="/assets/Capanna-logo-red.svg" alt="Logo"></img>
         <p>
           Capanna Di Settantaquattro is not just a restaurant; it's a journey
           through the authentic flavors of Italy, a culinary escape tucked away
@@ -29,7 +29,11 @@ const OurStoryGrid = ({}) => {
 
       <div className={`${styles.itemInvisible} ${styles.item}`}></div>
       <div className={`${styles.item} ${styles.image}`}>
-        <img src="/assets/our-story3.png" loading="lazy" alt="Chef in the kitchen"></img>
+        <img
+          src="/assets/our-story3.png"
+          loading="lazy"
+          alt="Chef in the kitchen"
+        ></img>
       </div>
       <div className={styles.item}>
         <h4>Simple ingredients, Rich flavours</h4>
@@ -45,7 +49,11 @@ const OurStoryGrid = ({}) => {
       </div>
 
       <div className={`${styles.itemInvisible} ${styles.item} ${styles.image}`}>
-        <img src="/assets/our-story4.png" loading="lazy" alt="Making pasta"></img>
+        <img
+          src="/assets/our-story4.png"
+          loading="lazy"
+          alt="Making pasta"
+        ></img>
       </div>
       <div className={styles.item}>
         <h4>Our heart and soul</h4>
