@@ -32,7 +32,7 @@ const ImageCarousel = ({ images }) => {
         alt="Capanna"
         className={styles.logo}
       />
-      <Link href="/bookings">
+      <Link href="/booking">
         <div className={styles.stampContainer}>
           <img
             src="/assets/book-text.png"
