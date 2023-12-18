@@ -19,10 +19,9 @@ const Layout = ({ children }) => {
     { id: 5, label: "Contact", link: "/contact" },
   ];
 
-  // Specify the page where you don't want the footer
+
   const pageWithoutFooter = "takeaway";
 
-  // Check if it's the specified page and if the screen width is less than a certain value
   const shouldHideFooter = currentPage === pageWithoutFooter;
 
   return (
