@@ -92,6 +92,28 @@ const BookingForm = () => {
                       position: "absolute",
                       transform: "translateX(15px)",
                       backgroundColor: "#fff",
+                      lineHeight: "0px",
+                      paddingLeft: "10px",
+                      paddingRight: "8px",
+                    }}
+                    htmlFor="peopleCount"
+                  >
+                    Number of people <span className={styles.star}>*</span>
+                  </label>
+                  <input
+                    type="number"
+                    id="peopleCount"
+                    name="peopleCount"
+                    min="0"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    style={{
+                      position: "absolute",
+                      transform: "translateX(15px)",
+                      backgroundColor: "#fff",
                       lineHeight: "1px",
                       paddingLeft: "10px",
                       paddingRight: "8px",
@@ -135,23 +157,6 @@ const BookingForm = () => {
                       position: "absolute",
                       transform: "translateX(15px)",
                       backgroundColor: "#fff",
-                      lineHeight: "1px",
-                      paddingLeft: "10px",
-                      paddingRight: "8px",
-                    }}
-                    htmlFor="comment"
-                  >
-                    Comment
-                  </label>
-                  <textarea id="comment" rows="4" />
-                </div>
-
-                <div>
-                  <label
-                    style={{
-                      position: "absolute",
-                      transform: "translateX(15px)",
-                      backgroundColor: "#fff",
                       lineHeight: "0px",
                       paddingLeft: "10px",
                       paddingRight: "8px",
@@ -183,6 +188,23 @@ const BookingForm = () => {
                     Select a time <span className={styles.star}>*</span>
                   </label>
                   <input type="time" id="time" required />
+                </div>
+
+                <div>
+                  <label
+                    style={{
+                      position: "absolute",
+                      transform: "translateX(15px)",
+                      backgroundColor: "#fff",
+                      lineHeight: "1px",
+                      paddingLeft: "10px",
+                      paddingRight: "8px",
+                    }}
+                    htmlFor="comment"
+                  >
+                    Comment
+                  </label>
+                  <textarea id="comment" rows="4" />
                 </div>
 
                 <div className={styles.buttoncontainer}>
