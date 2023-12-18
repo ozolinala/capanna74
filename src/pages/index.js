@@ -4,9 +4,6 @@ import ImageCarousel from "../components/ImageCarousel";
 import Menu from "../components/Menu";
 
 const images = [
-  "/assets/Homepage-image4.png",
-  "/assets/Homepage-image7.png",
-  "/assets/driedpasta.png",
   "/assets/wine.jpg",
   "/assets/panna-cotta.jpg",
   "/assets/dried-pasta.jpg",
