@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <Layout>
        <div className={styles.imageContainer}>
-       <img src="/assets/contact-page-pasta.jpg" alt="Logo"></img>
+       <img src="/assets/pesto-pasta.jpg" alt="Logo"></img>
           </div>
       <article className={styles.container}>
         <div className={styles.contactInfo}>
