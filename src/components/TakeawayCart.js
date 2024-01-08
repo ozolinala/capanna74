@@ -8,13 +8,14 @@ const TakeawayCart = ({ cartItems, orderProcess, setOrderProcess }) => {
   const visibleItems = showFullList ? cartItems : cartItems.slice(-2);
 
   const calculateTotal = () => {
-    return visibleItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
-  };
+    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+   };
 
   return (
     <div className={styles.cartContainer}>
       <h2>Your Order</h2>
-      <ul className={styles.cartList}>
+      <ul className={`${styles.cartList} ${showFullList ? styles.showCartList : ''}`}>
+
         {visibleItems.map((item) => (
           <li className={styles.cartListItem} key={item.id}>
             <div>
@@ -57,6 +58,7 @@ const TakeawayCart = ({ cartItems, orderProcess, setOrderProcess }) => {
           )}
         </button>
       )}
+      <div className={styles.cartFlex}>
       <p className={styles.total}>
         Total: <b>{calculateTotal()}kr.</b>
       </p>
@@ -72,6 +74,7 @@ const TakeawayCart = ({ cartItems, orderProcess, setOrderProcess }) => {
           Next
         </button>
       )}
+      </div>
     </div>
   );
 };
