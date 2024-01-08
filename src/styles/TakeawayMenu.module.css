@@ -125,6 +125,20 @@
   list-style: none;
   padding-top: 3vh;
   padding-bottom: 3vh;
+}
+
+.listItemContainer img{
+  padding-top: 5vh;
+    padding-bottom: 3vh;
+    padding-left: 3vh;
+    width: 15vh;
+    height: 15vh;
+    align-items: center;
+}
+.listItemContainer {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
   border-top: 0.5px solid var(--grey);
 }
 
@@ -257,5 +271,8 @@
 
   .takeawayLeft h2 {
     margin-top: 3rem;
+  }
+  .listItem p{
+ font-size:16px;
   }
 }
