@@ -1,7 +1,7 @@
 /* nav bar */
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   padding-right: 2%;
@@ -63,6 +63,17 @@
   font-weight: 400;
 }
 
+.homeButton {
+  background-color: var(--accent-color);
+  width: 2rem;
+  height: 2rem;
+  z-index: 10000;
+  border-radius: 100px;
+  position: absolute;
+  top: 0.8rem;
+  left: 2rem;
+}
+
 /* responsiveness for nav bar*/
 
 .menuIcon {
@@ -96,9 +107,9 @@
     display: block;
     margin-left: auto;
   }
-.nav{
-  height:1.5rem;
-}
+  .nav {
+    height: 1.5rem;
+  }
   .navLinks {
     display: none;
   }
@@ -190,5 +201,15 @@
   }
   .sisterRestaurantsContainer img {
     margin-bottom: 1%;
+  }
+
+  .homeButton {
+    background-color: var(--accent-color);
+    width: 2rem;
+    height: 2rem;
+    z-index: 10000;
+    border-radius: 100px;
+    position: fixed;
+    top: 1.2rem;
   }
 }
