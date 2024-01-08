@@ -69,7 +69,7 @@
 .cartContainer {
   display: flex;
   flex-direction: column;
-  background-color: var(--accent-color);
+  background-color: transparent; /* Make the background transparent */
   width: 18rem;
   padding: 1.8rem;
   color: var(--off-white);
@@ -77,8 +77,23 @@
   right: 0;
   top: 6rem;
   gap: 1vh;
+  overflow: hidden;
 }
 
+.cartContainer::before {
+  content: "";
+  display: block;
+  background-color: var(--accent-color);
+  width: calc(100% + 1em);
+  height: 100%;
+  position: absolute;
+  right: -1em;
+  top: 0;
+  z-index: -10;
+  border-radius: 25px;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
 .cartContainer ul {
   padding: 0;
   list-style: none;
@@ -112,13 +127,13 @@
   padding-bottom: 3vh;
 }
 
-.listItemContainer img{
+.listItemContainer img {
   padding-top: 5vh;
-    padding-bottom: 3vh;
-    padding-left: 3vh;
-    width: 15vh;
-    height: 15vh;
-    align-items: center;
+  padding-bottom: 3vh;
+  padding-left: 3vh;
+  width: 15vh;
+  height: 15vh;
+  align-items: center;
 }
 .listItemContainer {
   display: flex;
@@ -159,6 +174,8 @@
 .quantity button {
   border-radius: 50px;
   border: 0;
+  width: 2rem;
+  height: 2rem;
 }
 
 .total {
@@ -216,11 +233,12 @@ padding-right: 8rem;
   border: 0;
   background-color: var(--accent-color);
 }
+
 .showCartList {
   display: inline-flex !important;
  }
- 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 860px) {
   .takeawayContainer {
     padding-left: 0;
     padding-bottom: 70%;
@@ -228,18 +246,19 @@ padding-right: 8rem;
     margin: auto;
     padding-bottom: 17vh;
   }
-.listItemContainer img{
-  padding-top: 5vh;
+  .listItemContainer img {
+    padding-top: 5vh;
     padding-bottom: 3vh;
     padding-left: 3vh;
     width: 15vh;
     height: 15vh;
     align-items: center;
-}
+  }
   .menuNavbar {
     gap: 1rem;
-    padding-top: 6rem;
     position: sticky;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
   }
 
   .category {
@@ -253,7 +272,7 @@ padding-right: 8rem;
     width: auto;
     height: auto;
     justify-content: end;
-    padding: 1.8rem;
+    padding: 1rem;
     color: var(--off-white);
     position: fixed;
     left: 0;
@@ -269,14 +288,20 @@ padding-right: 8rem;
   .takeawayLeft h2 {
     margin-top: 3rem;
   }
-  .listItemContainer img{
+  .listItemContainer img {
     padding-top: 4vh;
-      padding-left: 2vh;
-      width: 12vh;
-      height: 12vh;
+    padding-left: 2vh;
+    width: 12vh;
+    height: 12vh;
   }
-  .listItem p{
- font-size:16px;
+  .listItem p {
+    font-size: 16px;
+  }
+
+  .quantity {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
   }
   /* .cartList{
     gap:0.3rem;
