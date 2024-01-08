@@ -25,7 +25,7 @@ const TakeawayCart = ({ cartItems, orderProcess, setOrderProcess }) => {
           </li>
         ))}
       </ul>
-      {cartItems.length > 2 && (
+      {cartItems.length > 0 && (
         <button className={styles.showMoreButton} onClick={() => setShowFullList(!showFullList)}>
           {showFullList ? (
             <svg

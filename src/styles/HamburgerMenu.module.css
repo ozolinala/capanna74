@@ -109,12 +109,12 @@
         right: 4vh;
      }
        .line {
-        width: 2.5rem;
+        width: 2rem;
         height: 2.5px;
         background-color: var(--grey);
        }
        .links{
-        margin-top: 17rem;
+        margin-top: 14rem;
         }
         .menu p {
             color: var(--grey);
@@ -134,7 +134,7 @@
         right: 40px;
      }
        .line {
-        width: 2.2rem;
+        width: 1.8rem;
         height: 2.2px;
         background-color: var(--grey);
        }
@@ -143,7 +143,7 @@
         margin: 2.5rem;
        }
        .links{
-        margin-top: 14rem;
+        margin-top: 12rem;
         }
    }
   
