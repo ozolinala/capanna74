@@ -19,7 +19,6 @@ const Layout = ({ children }) => {
     { id: 5, label: "Contact", link: "/contact" },
   ];
 
-
   const pageWithoutFooter = "takeaway";
 
   const shouldHideFooter = currentPage === pageWithoutFooter;
@@ -54,11 +53,11 @@ const Layout = ({ children }) => {
       </nav>
       <main>{children}</main>
       {currentPageNormalized !== "takeaway" && (
-      <footer className={styles.footer}>
-        <div className={styles.leftContainer}>
-          <div className={styles.logoContainer}>
-            <img src="/assets/capanna-grey.svg" alt="Logo" />
-          </div>
+        <footer className={styles.footer}>
+          <div className={styles.leftContainer}>
+            <div className={styles.logoContainer}>
+              <img src="/assets/capanna-grey.svg" alt="Logo" />
+            </div>
 
             <div className={styles.addressContainer}>
               <p>Gammel Kongevej 74, København K</p>
@@ -97,7 +96,7 @@ const Layout = ({ children }) => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/assets/mangia-logo.svg"
+                  src="/assets/Mangia-logo.png"
                   alt="Mangia"
                   style={{ height: "1rem" }}
                 />
@@ -108,12 +107,12 @@ const Layout = ({ children }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/circolo-logo.svg" alt="Circolo" />
+                <img src="/assets/Circolo-logo.png" alt="Circolo" />
               </a>
             </div>
           </div>
-      </footer>
-       )}
+        </footer>
+      )}
     </div>
   );
 };
