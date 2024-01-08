@@ -110,13 +110,20 @@
   list-style: none;
   padding-top: 3vh;
   padding-bottom: 3vh;
-  border-top: 0.5px solid var(--grey);
 }
 
+.listItemContainer img{
+  padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 3vh;
+    width: 15vh;
+    height: 15vh;
+}
 .listItemContainer {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  border-top: 0.5px solid var(--grey);
 }
 
 .noTopBorder {
