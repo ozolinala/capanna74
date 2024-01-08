@@ -9,35 +9,35 @@
           "name": "Bruschetta al Pomodoro",
           "description": "Toasted bread with diced tomatoes, garlic, basil, and olive oil.",
           "price": 40,
-          "image": "/assets/bruschetta.png"
+          "image": "/assets/bruschetta.webp"
         },
         {
           "id": 102,
           "name": "Caprese Salad",
           "description": "Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.",
           "price": 60,
-          "image": "/assets/caprese.png"
+          "image": "/assets/caprese.webp"
         },
         {
           "id": 103,
           "name": "Prosciutto e Melone",
           "description": "Thinly sliced prosciutto served with melon.",
           "price": 70,
-          "image": "/assets/prosciutto-melone.png"
+          "image": "/assets/prosciutto-melone.webp"
         },
         {
           "id": 104,
           "name": "Olive Miste",
           "description": "Mixed marinated olives.",
           "price": 50,
-          "image": "/assets/olives.png"
+          "image": "/assets/olives.webp"
         },
         {
           "id": 105,
           "name": "Crostini con Formaggio di Capra e Miele",
           "description": "Crostini with goat cheese and honey.",
           "price": 80,
-          "image": "/assets/honey-crostini.png"
+          "image": "/assets/honey-crostini.webp"
         }
       ]
     },
@@ -50,28 +50,28 @@
           "name": "Spaghetti alla Carbonara",
           "description": "Classic Roman pasta with guanciale, egg, and pepper.",
           "price": 85,
-          "image": "/assets/carbonara.png"
+          "image": "/assets/carbonara.webp"
         },
         {
           "id": 202,
           "name": "Fusilli al Pesto",
           "description": "Spiral pasta with traditional Genovese pesto.",
           "price": 75,
-          "image": "/assets/fusilli-pesto.png"
+          "image": "/assets/fusilli-pesto.webp"
         },
         {
           "id": 203,
           "name": "Spaghetti Aglio, Olio e Peperoncino",
           "description": "Spaghetti with oil, toasted garlic, and peperoncino.",
           "price": 90,
-          "image": "/assets/aglio-olio.png"
+          "image": "/assets/aglio-olio.webp"
         },
         {
           "id": 204,
           "name": "Penne all’Amatriciana",
           "description": "Penne with tomato sauce, meat, and basil.",
           "price": 95,
-          "image": "/assets/spaghetti-amatriciana.png"
+          "image": "/assets/spaghetti-amatriciana.webp"
         }
       ]
     },
@@ -84,28 +84,28 @@
           "name": "Tiramisu",
           "description": "Ladyfingers, Espresso, Mascarpone, Eggs, Sugar, Cocoa Powder.",
           "price": 65,
-          "image": "/assets/tiramisu.png"
+          "image": "/assets/tiramisu.webp"
         },
         {
           "id": 302,
           "name": "Sorbetto al Limone",
           "description": "Lemon juice-flavored ice slush.",
           "price": 55,
-          "image": "/assets/sorbetto.png"
+          "image": "/assets/sorbetto.webp"
         },
         {
           "id": 303,
           "name": "Panna Cotta",
           "description": "Creamy Italian dessert with heavy cream and vanilla extract.",
           "price": 75,
-          "image": "/assets/panna-cotta.png"
+          "image": "/assets/panna-cotta.webp"
         },
         {
           "id": 304,
           "name": "Amaretti",
           "description": "Almond cookies.",
           "price": 40,
-          "image": "/assets/amaretti.png"
+          "image": "/assets/amaretti.webp"
         }
       ]
     },
@@ -118,28 +118,28 @@
           "name": "Aperol Spritz",
           "description": "Aperol, Prosecco, and soda.",
           "price": 80,
-          "image": "/assets/spritz.png"
+          "image": "/assets/spritz.webp"
         },
         {
           "id": 402,
           "name": "Mojito",
           "description": "White rum, lime juice, and mint leaves.",
           "price": 85,
-          "image": "/assets/mojito.png"
+          "image": "/assets/mojito.webp"
         },
         {
           "id": 403,
           "name": "Negroni",
           "description": "Gin, red vermouth, and Campari.",
           "price": 95,
-          "image": "/assets/negroni.png"
+          "image": "/assets/negroni.webp"
         },
         {
           "id": 404,
           "name": "Martini",
           "description": "Gin stirred with dry vermouth.",
           "price": 90,
-          "image": "/assets/martini.png"
+          "image": "/assets/martini.webp"
         }
       ]
     },
