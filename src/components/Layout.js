@@ -26,7 +26,12 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.container}>
       <nav className={styles.nav}>
-        <HamburgerMenu menuItems={menuItems} />
+        <div className={styles.navContainer}>
+          <Link className={styles.homeButton} href="/">
+            <div></div>
+          </Link>
+          <HamburgerMenu menuItems={menuItems} />
+        </div>
 
         <div className={`${styles.navLinks} ${menuActive && styles.active}`}>
           {menuItems.map((item) => (
@@ -56,7 +61,10 @@ const Layout = ({ children }) => {
         <footer className={styles.footer}>
           <div className={styles.leftContainer}>
             <div className={styles.logoContainer}>
-            <Link rel="stylesheet"className={styles.backToMenu} href="/"> <img src="/assets/capanna-grey.svg" alt="Logo" /></Link>
+              <Link rel="stylesheet" className={styles.backToMenu} href="/">
+                {" "}
+                <img src="/assets/capanna-grey.svg" alt="Logo" />
+              </Link>
             </div>
 
             <div className={styles.addressContainer}>
