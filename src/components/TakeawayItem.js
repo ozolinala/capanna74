@@ -42,7 +42,7 @@ const TakeawayItem = ({ item, onAddToCart }) => {
           </div>
         </span>
       </div>
-      <span>{item.image}</span>
+      <img src={item.image} alt={item.name} width={120} height={120}></img>
     </li>
   );
 };
