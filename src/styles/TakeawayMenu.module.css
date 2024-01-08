@@ -191,6 +191,8 @@
   color: var(--accent-color);
   font-weight: 600;
   margin-top: 2rem;
+padding-left: 8rem;
+padding-right: 8rem;
 }
 
 .goBackButton {
@@ -289,8 +291,8 @@
   }
   .orderButton{
     margin:0.2rem;
-    padding-left: 4vh;
-    padding-right: 4vh;
+    padding-left: 6vh;
+    padding-right: 6vh;
     margin-top: 1vh;
   }
   .cartFlex{
