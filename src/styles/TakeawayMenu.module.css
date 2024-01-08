@@ -238,7 +238,14 @@
     margin: auto;
     padding-bottom: 30vh;
   }
-
+.listItemContainer img{
+  padding-top: 5vh;
+    padding-bottom: 3vh;
+    padding-left: 3vh;
+    width: 15vh;
+    height: 15vh;
+    align-items: center;
+}
   .menuNavbar {
     gap: 1rem;
     padding-top: 1rem;
@@ -271,6 +278,12 @@
 
   .takeawayLeft h2 {
     margin-top: 3rem;
+  }
+  .listItemContainer img{
+    padding-top: 4vh;
+      padding-left: 2vh;
+      width: 12vh;
+      height: 12vh;
   }
   .listItem p{
  font-size:16px;
