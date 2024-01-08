@@ -256,4 +256,7 @@
   .takeawayLeft h2 {
     margin-top: 3rem;
   }
+  .listItem p{
+ font-size:16px;
+  }
 }

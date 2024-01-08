@@ -50,7 +50,7 @@
           "name": "Spaghetti alla Carbonara",
           "description": "Classic Roman pasta with guanciale, egg, and pepper.",
           "price": 85,
-          "image": "/assets/pasta-carbonara.jpg"
+          "image": "/assets/carbonara.png"
         },
         {
           "id": 202,
@@ -64,7 +64,7 @@
           "name": "Spaghetti Aglio, Olio e Peperoncino",
           "description": "Spaghetti with oil, toasted garlic, and peperoncino.",
           "price": 90,
-          "image": "/assets/spaghettopomodoro.png"
+          "image": "/assets/aglio-olio.png"
         },
         {
           "id": 204,
