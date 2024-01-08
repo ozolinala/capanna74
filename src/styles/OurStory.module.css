@@ -92,6 +92,10 @@
     width: 100%;
     object-fit: contain;
   }
+  .shortImage{
+    height:45vh;
+      object-fit: cover !important;
+  }
   .item p,
   .item img {
     padding-bottom: 20%;

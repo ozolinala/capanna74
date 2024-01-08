@@ -5,7 +5,7 @@ const OurStoryGrid = ({}) => {
   return (
     <div className={styles.gridContainer}>
       <div className={`${styles.item} ${styles.image}`}>
-        <img src="/assets/our-story1.png" alt="Pasta in a pan"></img>
+        <img  src="/assets/our-story1.png" alt="Pasta in a pan" className={styles.shortImage}></img>
       </div>
       <div id={styles.logo} className={styles.item}>
         <img src="/assets/Capanna-logo-red.svg" alt="Logo"></img>
