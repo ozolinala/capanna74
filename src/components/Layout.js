@@ -56,13 +56,13 @@ const Layout = ({ children }) => {
         <footer className={styles.footer}>
           <div className={styles.leftContainer}>
             <div className={styles.logoContainer}>
-              <img src="/assets/capanna-grey.svg" alt="Logo" />
+            <Link rel="stylesheet"className={styles.backToMenu} href="/"> <img src="/assets/capanna-grey.svg" alt="Logo" /></Link>
             </div>
 
             <div className={styles.addressContainer}>
               <p>Gammel Kongevej 74, København K</p>
               <p>+45 00 00 00 00 </p>
-              <p>info@capannadi74.dk</p>
+              <a href="mailto:info@capannadi74.dk">info@capanna74.dk</a>
               <p>@capannadi74</p>
             </div>
             <div className={styles.socialMediaContainer}>
