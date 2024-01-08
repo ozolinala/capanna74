@@ -51,7 +51,7 @@
    }
    
    .button.active .line:nth-child(1) {
-    transform: rotate(35deg) translateY(7px);
+    transform: rotate(37deg) translateY(7px);
     transition: transform 0.3s ease;
    }
    
