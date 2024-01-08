@@ -139,9 +139,12 @@
 @media (max-width: 768px) {
   .formContainer {
     flex-direction: column;
-    padding-bottom: 5%;
+    padding-bottom: 45%;
   }
-
+.title{
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
   .leftColumn,
   .rightColumn {
     width: 85vw;

@@ -45,7 +45,7 @@ const BookingForm = () => {
           </div>
         ) : (
           <div>
-            <h2>Book a table</h2>
+            <h2 className={styles.title}>Book a table</h2>
             <form
               onSubmit={handleSubmit}
               autoComplete="off"
