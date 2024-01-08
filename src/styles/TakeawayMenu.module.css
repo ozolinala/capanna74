@@ -113,6 +113,12 @@
   border-top: 0.5px solid var(--grey);
 }
 
+.listItemContainer {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
 .noTopBorder {
   border-top: none;
 }
