@@ -65,7 +65,7 @@
 .takeawayLeft h2 {
   padding: 0;
 }
-
+/* 
 .cartContainer {
   display: flex;
   flex-direction: column;
@@ -75,10 +75,38 @@
   color: var(--off-white);
   position: fixed;
   right: 0;
+  border-radius: 5%;
   top: 6rem;
   gap: 1vh;
-}
-
+} */
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent; /* Make the background transparent */
+  width: 18rem;
+  padding: 1.8rem;
+  color: var(--off-white);
+  position: fixed;
+  right: 0;
+  top: 6rem;
+  gap: 1vh;
+  overflow: hidden; 
+ }
+ 
+ .cartContainer::before {
+  content: "";
+  display: block;
+  background-color: var(--accent-color); 
+  width: calc(100% + 1em);
+  height: 100%;
+  position: absolute;
+  right: -1em;
+  top: 0;
+  z-index: -10;
+  border-radius: 10%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+ }
 .cartContainer ul {
   padding: 0;
   list-style: none;
@@ -201,7 +229,7 @@
   background-color: var(--accent-color);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 860px) {
   .takeawayContainer {
     padding-left: 0;
     padding-bottom: 70%;
@@ -212,7 +240,8 @@
 
   .menuNavbar {
     gap: 1rem;
-    padding-top: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
   }
 
   .category {
