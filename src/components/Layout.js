@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
       <nav className={styles.nav}>
         <div className={styles.navContainer}>
           <Link className={styles.homeButton} href="/">
-            <div></div>
+            <img src="/assets/N74homebutton.svg" alt="home" />
           </Link>
           <HamburgerMenu menuItems={menuItems} />
         </div>

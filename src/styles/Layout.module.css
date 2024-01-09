@@ -64,11 +64,9 @@
 }
 
 .homeButton {
-  background-color: var(--accent-color);
-  width: 2rem;
-  height: 2rem;
+  
   z-index: 10000;
-  border-radius: 100px;
+
   position: absolute;
   top: 0.8rem;
   left: 2rem;
@@ -204,9 +202,8 @@
   }
 
   .homeButton {
-    background-color: var(--accent-color);
-    width: 1.6rem;
-    height: 1.6rem;
+   
+  
     z-index: 10000;
     border-radius: 100px;
     position: fixed;
@@ -215,9 +212,7 @@
 }
 @media (max-width: 400px) {
   .homeButton {
-    background-color: var(--accent-color);
-    width: 1.8rem;
-    height: 1.8rem;
+   
     z-index: 10000;
     border-radius: 100px;
     position: fixed;

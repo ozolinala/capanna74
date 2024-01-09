@@ -9,7 +9,7 @@ const ImageCarousel = ({ images }) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 3000,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
