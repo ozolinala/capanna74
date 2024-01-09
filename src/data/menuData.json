@@ -98,7 +98,7 @@
           "name": "Panna Cotta",
           "description": "Creamy Italian dessert with heavy cream and vanilla extract.",
           "price": 75,
-          "image": "/assets/panna-cotta.webp"
+          "image": "/assets/panna-cotta-dish.webp"
         },
         {
           "id": 304,
