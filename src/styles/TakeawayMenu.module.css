@@ -316,9 +316,9 @@ padding-right: 8rem;
   }
   .orderButton{
     margin:0.2rem;
-    padding-left: 6vh;
-    padding-right: 6vh;
-    margin-top: 1vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    margin-top: 1.2vh;
   }
   .cartFlex{
     display:flex;
