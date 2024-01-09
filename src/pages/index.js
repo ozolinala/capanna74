@@ -4,15 +4,15 @@ import ImageCarousel from "../components/ImageCarousel";
 import Menu from "../components/Menu";
 
 const images = [
-  "/assets/wine.jpg",
-  "/assets/panna-cotta.jpg",
-  "/assets/dried-pasta.jpg",
-  "/assets/pasta-carbonara.jpg",
-  "/assets/kitchen.jpg",
-  "/assets/kitchen2.jpg",
-  "/assets/laughing.jpg",
-  "/assets/veggies.jpg",
-  "/assets/fusillo.jpg",
+  "/assets/wine.webp",
+  "/assets/panna-cotta.webp",
+  "/assets/dried-pasta.webp",
+  "/assets/pasta-carbonara.webp",
+  "/assets/kitchen.webp",
+  "/assets/kitchen2.webp",
+  "/assets/laughing.webp",
+  "/assets/veggies.webp",
+  "/assets/fusillo.webp",
 ];
 
 const HomePage = () => {

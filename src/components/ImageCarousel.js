@@ -23,7 +23,7 @@ const ImageCarousel = ({ images }) => {
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className={styles.slide}>
-            <img src={image} alt={`Slide ${index + 1}`} />
+            <img loading="lazy" src={image} alt={`Slide ${index + 1}`} />
           </div>
         ))}
       </Slider>
