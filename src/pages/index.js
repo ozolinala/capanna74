@@ -4,10 +4,12 @@ import ImageCarousel from "../components/ImageCarousel";
 import Menu from "../components/Menu";
 
 const images = [
+  "/assets/header-strampelli.webp",
   "/assets/wine.webp",
-  "/assets/panna-cotta.webp",
-  "/assets/dried-pasta.webp",
+  
   "/assets/pasta-carbonara.webp",
+  "/assets/dried-pasta.webp",
+  "/assets/panna-cotta.webp",
   "/assets/kitchen.webp",
   "/assets/kitchen2.webp",
   "/assets/laughing.webp",

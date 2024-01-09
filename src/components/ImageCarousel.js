@@ -10,11 +10,11 @@ const ImageCarousel = ({ images }) => {
     dots: false,
     infinite: true,
     speed: 3000,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    variableWidth: true,
+   
     adaptiveHeight: true,
   };
 
